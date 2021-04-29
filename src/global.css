@@ -1,0 +1,14 @@
+/*div{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+    
+    html,
+    body,
+    div#root{
+        height: 100vh;
+    }
+    

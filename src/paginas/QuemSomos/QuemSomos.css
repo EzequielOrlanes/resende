@@ -1,0 +1,24 @@
+
+
+.Titulo{
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+    font: serif;
+    background-color: aqua;
+}
+
+.Subtitulo{
+
+    color: red;
+}
+
+
+img{
+    height: 200px;
+}
+
+.Meio{
+
+    background: rgb(136, 105, 111);
+}
