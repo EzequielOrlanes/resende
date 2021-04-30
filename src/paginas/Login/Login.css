@@ -17,12 +17,12 @@
     max-width: 200px;
     align-items: center
 }
-.imput{
+/*.imput{
     margin-left: 16px;
     margin-right: 16px;
     justify-content: center;
     flex-direction: column;
-}
+}*/
 h1{ 
     font: Times ;
     text-align: center;
