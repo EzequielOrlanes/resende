@@ -1,24 +1,20 @@
 
-
-.Titulo{
-    width: 700px; 
-    margin-left: auto;
-    margin-right: auto; 
-    font: serif;
-    background-color: aqua;
+body {
+    background-color:blueviolet;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Subtitulo{
-
-    color: red;
+.box{
+    background-color:whitesmoke;
+    width: 300px;
+    height: 500px;
+    align-items: center;
 }
 
-
-img{
-    height: 200px;
-}
-
-.Meio{
-
-    background: rgb(136, 105, 111);
+h1{ 
+    font: Times ;
+    text-align: center;
 }
