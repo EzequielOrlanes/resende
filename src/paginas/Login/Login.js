@@ -10,7 +10,9 @@ function Login() {
 
 
 <h1> Login </h1>
-<button onClick = ""></button>
+<input></input>
+<input></input>
+<button> Login </button>
 
 </div>
 
