@@ -1,11 +1,10 @@
 import React from "react";
 import Routes from "./routes";
-//import Home from "./paginas/Home";
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
+    
     <Routes/>
   );
 }
