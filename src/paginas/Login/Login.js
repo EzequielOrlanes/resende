@@ -1,6 +1,7 @@
 import React from "react";
 import {Form, Button} from "react-bootstrap"
 import "./Login.css"
+import {Link} from "react-router-dom";
 
 
 function Login() {
@@ -10,11 +11,14 @@ function Login() {
     <Form>
     <h1> RESENDE BUSINESS </h1>
     <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Control type="email" placeholder="Email" />
   </Form.Group>
     <Form.Control type="password" placeholder="Senha" />
+    <p></p>
     <Button variant="primary">Login</Button>
+    <p></p>
+    <Link to="cadastro">Nao é cadastrado?</Link><h1> </h1>
+    <Link to=" ">Esqueci minha senha.</Link><h1> </h1>
     </Form>
     </div>
 </div>
