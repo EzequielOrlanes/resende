@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 function Login() {
     return ( 
 <div className = "box">
-    <div className ="comteudo">
+    <div className ="conteudo">
     <Form>
     <h1> RESENDE BUSINESS </h1>
     <Form.Group controlId="formBasicEmail">

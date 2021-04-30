@@ -1,15 +1,15 @@
 
-/*body {
+body {
     background-color:rgb(15, 14, 15);
     height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}*/
+}
 
 .box1{
     background-color:rgb(255, 0, 0);
-    width: 2048px;
+    width: 1024px;
     height: 50px;
     align-items: center;
 }
@@ -24,10 +24,12 @@
 .Textodeapresentação{
     text-align: center;
     color:black;
+    max-width: 1000px;
+
 
 }
 img {
     width: 300px;
     height: 300px;
-    text-align: center;
+    align-items: center;
 }
