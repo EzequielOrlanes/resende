@@ -7,14 +7,27 @@ body {
     align-items: center;
 }
 
-.box{
+.box1{
     background-color:whitesmoke;
-    width: 300px;
+    width: 900px;
     height: 500px;
     align-items: center;
 }
 
-h1{ 
+.Quemsomosapresentação{ 
     font: Times ;
+    color: navy;
+    text-align: left;
+
+
+}
+.Textodeapresentação{
+    text-align: center;
+    color:black;
+
+}
+img {
+    width: 300px;
+    height: 300px;
     text-align: center;
 }
