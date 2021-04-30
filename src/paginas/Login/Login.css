@@ -9,7 +9,13 @@
     justify-content: center;
     flex-grow: 1;
 }
-
+body {
+    background-color:rgb(252, 249, 252);
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 h1{ 
     font: Times ;
     text-align: center;
