@@ -1,4 +1,10 @@
 .Home{
-text-align: center;
-
+text-align: left;
+display: flex;
+    flex-direction: row;
+    background-color:rgb(255, 222, 173);
+    align-items: left;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 60px 30px 80px;
 }
