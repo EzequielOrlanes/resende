@@ -35,7 +35,6 @@ function Login() {
                     </div>
                 </Form>
             </div>
-            <img id = "foto" src= "imagem/artesanato.jpg" alt=""/>
         </div>
     )
 }
