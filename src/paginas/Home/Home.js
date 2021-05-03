@@ -9,7 +9,7 @@ import { Button} from "react-bootstrap"
 
 function Home() {
     return( 
-        <div>
+        <div className = "pag-home">
         <div className = "Home">
         <Bar/> 
          
@@ -30,6 +30,8 @@ function Home() {
         </div>
 
     );
+
+
 }
 
 export default Home;

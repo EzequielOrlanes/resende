@@ -15,7 +15,7 @@ function Login() {
 }
 
     return ( 
-        <div className = "Pagina-login"> 
+        <div className = "Pagina-login" > 
         <div className= "box-logomarca"></div>
             <div className = "box-login">
                 <Form>
@@ -35,6 +35,7 @@ function Login() {
                     </div>
                 </Form>
             </div>
+            <img id = "foto" src= "imagem/artesanato.jpg" alt=""/>
         </div>
     )
 }

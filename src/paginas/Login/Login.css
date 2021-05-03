@@ -3,7 +3,7 @@
     display: flex;
     align-items: center; /*Alinha o item na direção Y*/
     justify-content: center; /*Alinha o item na direção X*/
-    background-color: #98FB98;
+    background-color:#247ba0;
 }
 .box-login{
     display: flex;
@@ -17,14 +17,13 @@
     background-color:#F5F5DC;
     border-radius: .5rem;
     box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
-    border-spacing: 1ex;
+    /*border-spacing: 1ex;*/
 }
 .Conteudo-box-login{
     margin: 10px;
 }
 
-
-
+/*
 .box-logomarca{
     display: flex;
     align-items: left;
@@ -32,7 +31,7 @@
     width: 20px;
     height: 50px;
     
-}
+}*/
 
 .login{
     align-items: center; /*Alinha o item na direção Y*/
