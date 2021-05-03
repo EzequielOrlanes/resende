@@ -5,7 +5,6 @@ import Fab from "@material-ui/core/Fab"
 import AddIcon from "@material-ui/icons/Add"
 
 const styles = theme => ({
-
     fab: {
         position: "absolute",
         bottom: theme.spacing.unit * 3,
