@@ -1,6 +1,5 @@
 import React from "react";
 import "./QuemSomos.css";
-import Primeiro from './Componentes/Primeiro'
 
 function QuemSomos() {
   return ( 
