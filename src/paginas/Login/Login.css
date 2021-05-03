@@ -3,8 +3,11 @@
     display: flex;
     align-items: center; /*Alinha o item na direção Y*/
     justify-content: center; /*Alinha o item na direção X*/
-    background-color:#247ba0;
+    background-color:#70c1b3;
+    /*background-image: url("foto.png") ; Coloca foto no background   */
+
 }
+
 .box-login{
     display: flex;
     flex-direction: column;
