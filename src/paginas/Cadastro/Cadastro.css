@@ -1,0 +1,13 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 200px 0 0 0;
+    flex-grow: 1;
+    margin-left: 50px;
+}
+.bas{
+    height: 100%;
+    display: flex;
+    
+}
