@@ -5,7 +5,6 @@ import { IconContext } from "react-icons/lib";
 import "./Menu.css";
 import {useHistory} from "react-router-dom";
 
-
 function Menu (props){
     const history = useHistory();
     const [currentPage, setCurrentPage] = useState("/home");
@@ -67,10 +66,11 @@ function Menu (props){
 
     return (
         <>
-            <AppBar position="static" style= {{backgroundColor: "whitesmoke"}}> 
+            <AppBar position="static" style= {{backgroundColor: "whitesmoke"}}>
                 {props.children}
 
                 <Toolbar style= {{backgroundColor: "whitesmoke"}}>
+
                     <IconButton
                         edge="start" 
                         aria-label="menu"
@@ -80,7 +80,7 @@ function Menu (props){
 
                     <div className="userContainer">
                         <p className="userName">Resende Business</p>
-                        <Avatar alt="Resende Costa" src="./Logo-imagem.png" />
+                        <Avatar alt="Resende Costa" src="/imagem/Logo.png" />
                     </div>
 
                 </Toolbar>
