@@ -7,18 +7,13 @@ import Home from "./paginas/Home";
 import Login from "./paginas/Login";
 import Perfil from "./paginas/Perfil";
 import QuemSomos from "./paginas/QuemSomos";
-import Menu from "./paginas/Menu";
+
 
 function Routes(){
     return(
         <BrowserRouter>
             <Switch>           
                 <Route path="/Login" component={Login}/>
-                <Route path="/Empreendimentos" component={Empreendimentos}/>
-                <Route path="/Empresas" component={Empresas}/>
-                <Route path="/Perfil" component={Perfil}/>
-                <Route path="/Cadastro" component={Cadastro}/>
-                <Route path="/QuemSomos" component={QuemSomos}/>
                 <Route path="/" component={UserMenu}/>
             </Switch>
         </BrowserRouter>
@@ -28,12 +23,17 @@ function Routes(){
 
 function UserMenu(){
     return (
-        <Menu>
+       
            <Switch>           
                 <Route path="/home" component={Home}/>
+                <Route path="/Empreendimentos" component={Empreendimentos}/>
+                <Route path="/Empresas" component={Empresas}/>
+                <Route path="/Perfil" component={Perfil}/>
+                <Route path="/Cadastro" component={Cadastro}/>
+                <Route path="/QuemSomos" component={QuemSomos}/>
                 <Route component={() => <Redirect to="/home"></Redirect>}/>
             </Switch> 
-        </Menu>
+        
     )
 }
 
