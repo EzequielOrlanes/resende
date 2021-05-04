@@ -69,7 +69,7 @@ function Menu (props){
             <AppBar position="static">
                 {props.children}
 
-                <Toolbar style= {{backgroundColor: "white"}}>
+                <Toolbar style= {{backgroundColor: "whitesmoke"}}>
 
                     <IconButton
                         edge="start" 

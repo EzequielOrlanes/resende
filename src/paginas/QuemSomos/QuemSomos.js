@@ -9,18 +9,22 @@ function QuemSomos() {
 <div className="Pagina-QuemSomos"> 
  <Menu/>
         <div className ="header"> 
+        
             <h1 className = "Titulo-QuemSomos"> Quem Somos nós ?</h1>
           <p  className = "Textodeapresentação">
 Nós somos alunos de graduação de Engenharias Elétrica e Controle e Automação da Universidade Federal de Minas Gerais(UFMG), e atualmente somos trainees da CPE - Consultoria e Projetos Elétricos, uma empresa júnior sem fins lucrativos que busca incentivar o empreendedorismo no Brasil. Nosso objetivo com o ... é dar visibilidade aos microeemprendedores da cidade de Resende Costa (MG) que começaram a surgir principalmente após a pandemia da Covid-19, a fim de impulsionar o comércio da cidade local.
           </p>
-
+          <div className = "box1"> Box 1 </div>
         </div>
 
-        <div className ="content"> Bloco 2 </div>
-        <div className ="navigation">BLoco 3 </div>
+        <div className ="content"> Bloco 2
+
+          </div> 
+        
+        <div className ="navigation"> Bloco 3  </div>
 
 
-        <div className ="footer">
+        <div className ="footer"> 
 
         <div className = "Logo"> 
         <img src="./imagem/Logo.png"/> 
