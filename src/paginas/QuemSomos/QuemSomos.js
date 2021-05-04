@@ -25,11 +25,7 @@ Nós somos alunos de graduação de Engenharias Elétrica e Controle e Automaç�
 
 
         <div className ="footer"> 
-
-        <div className = "Logo"> 
-        <img src="./imagem/Logo.png"/> 
         
-        </div>
 
         <p> 
           Resende Business - Avenida Barbacena.
