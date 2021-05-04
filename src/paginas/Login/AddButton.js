@@ -2,7 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import {withStyles} from "@material-ui/core/styles"
 import Fab from "@material-ui/core/Fab"
-import AddIcon from "@material-ui/icons/Add"
+import {MdHome} from "react-icons/md";
+import { Button} from "react-bootstrap"
+import {Link} from "react-router-dom";
 
 const styles = theme => ({
     fab: {
@@ -16,8 +18,9 @@ function AddButon(props) {
     const {classes} = props
     return (
         <div>
-            <Fab color="primary" arial-label="Add" className={classes.fab}>
-                <AddIcon/>
+            <Fab color="default" arial-label="Home" className={classes.fab}>
+            <Button variant="inherit">
+        <Link to="home"><MdHome/></Link></Button>  
             </Fab>
         </div>
     )

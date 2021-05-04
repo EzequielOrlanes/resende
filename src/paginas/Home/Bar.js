@@ -5,9 +5,10 @@ import Toolbar from "@material-ui/core/Toolbar"
 import AppBar from "@material-ui/core/AppBar"
 import Typography from "@material-ui/core/Typography"
 
+
 const styles = {
     root: {
-        flexGrow: 1,
+        flexGrow: 7,
     }
 }
 
@@ -15,9 +16,9 @@ function Bar(props) {
     const {classes} = props;
     return (
         <div className={classes.root}>
-            <AppBar position="static" color="default">
+            <AppBar position="static" color="transparent">
                 <Toolbar>
-                    <Typography variant="h7" color = "inherit">
+                    <Typography variant="h6" color = "inherit">
                         Home
                     </Typography>
                 </Toolbar>

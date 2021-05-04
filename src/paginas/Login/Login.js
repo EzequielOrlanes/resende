@@ -3,6 +3,8 @@ import {Form, Button} from "react-bootstrap"
 import "./Login.css"
 import {Link} from "react-router-dom";
 import {useHistory} from "react-router-dom"
+import AddButon from "./AddButton"
+
 
 
 function Login() {
@@ -32,6 +34,7 @@ function Login() {
                         <p></p>
                         <Link to="cadastro"> Não é cadastrado? </Link><h1> </h1>
                         <Link to=" ">Esqueci minha senha</Link><h1> </h1>
+                        <AddButon/>
                     </div>
                 </Form>
             </div>

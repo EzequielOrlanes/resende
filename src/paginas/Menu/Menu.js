@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Drawer, List, ListItem, ListItemText, Typography, IconButton, AppBar, Toolbar, Avatar} from  "@material-ui/core";
-import {MdHome, MdPerson, MdLaptop, MdMenu} from "react-icons/md";
+import {MdHome, MdPerson, MdLaptop, MdMenu, MdExplicit, MdPersonAdd, MdHelpOutline, MdLocationCity} from "react-icons/md";
 import { IconContext } from "react-icons/lib";
 import "./Menu.css";
 import {useHistory} from "react-router-dom";
@@ -38,11 +38,35 @@ function Menu (props){
         text: "Login",
         },
 
+        {
+        pathName: "/cadastro",
+        icon: <MdPersonAdd/>,
+         text: "Cadastrro",
+         },
+
+        {
+        pathName: "/empreendimentos",
+        icon: <MdExplicit/>,
+        text: "Empreendimentos",
+        },
+
+        {
+        pathName: "/empresas",
+        icon: <MdLocationCity/>,
+        text: "Empresas",
+        },
+
+        {
+        pathName: "/quemsomos",
+        icon: <MdHelpOutline/>,
+        text: "Quem Somos",
+        },   
+
     ];
 
     return (
         <>
-            <AppBar position="statc">
+            <AppBar position="static">
                 {props.children}
 
                 <Toolbar style= {{backgroundColor: "white"}}>
@@ -56,7 +80,7 @@ function Menu (props){
 
                     <div className="userContainer">
                         <p className="userName">Resende Business</p>
-                        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                        <Avatar alt="Resende Costa" src="./Logo-imagem.png" />
                     </div>
 
                 </Toolbar>
