@@ -12,7 +12,7 @@ function Login() {
     const[password, setPassword] = useState();
     const history = useHistory();
     function login(){
-    alert("aopa"+ email+ " " + password);
+    alert( email+ " " + password);
     history.push("perfil");
 }
 
