@@ -1,15 +1,15 @@
 .pag-home{
     display: flex;
     width:100%;
-    height: 100%;
+    height:100%;
     flex-wrap: wrap; /*Deixa um bloco abaixo do outro*/
-    background-color:rgb(238, 212, 127);
 }
 
+
 .Home{
-    display: flex;
+    background:white;
     width: 100%;
-    
+    display: flex;
 }
 .h1{
     display: flex;
