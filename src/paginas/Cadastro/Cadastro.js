@@ -1,10 +1,14 @@
 import React from "react";
 import {Form, Col,Button} from "react-bootstrap"
 import "./Cadastro.css"
+import Menu from "../Menu"
 
 function Cadastro() {
             return ( 
+              
                 <div className ="bas">
+                    <Menu/>
+
                     <div className="conteiner">
                         <Form>
                             <h1>Cadaaaa</h1>
@@ -65,7 +69,7 @@ function Cadastro() {
                             <Form.Group id="formGridCheckbox">
                                 <Form.Check type="checkbox" label="I'm not a robot" />
                             </Form.Group>
-                            <Button variant="primary" size="lg" block>
+                            <Button className = "Button-Cadastrar" variant="primary" size="lg" block>
                                 Cadastrar 
                             </Button>
                         </Form>
