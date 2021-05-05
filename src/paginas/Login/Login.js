@@ -21,7 +21,8 @@ function Login() {
         <div className= "box-logomarca"></div>
             <div className = "box-login">
                 <Form>
-                    <h1 className = "Titulo-login"> Resende Business</h1>
+                    
+                    <img className = "imagem-logo" src= "./imagem/Logo.png"/> 
                     <p></p>
                     <div className="Conteudo-box-login">
                         <p className = "Subtitulo-login"> Faça seu Login: </p> 

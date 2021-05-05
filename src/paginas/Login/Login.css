@@ -11,9 +11,9 @@
 .box-login{
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    width: 300px;
-    height: 500px;
+    max-width: 45vh;
+    width: 45vh;
+    height: 85vh;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
@@ -23,7 +23,7 @@
     /*border-spacing: 1ex;*/
 }
 .Conteudo-box-login{
-    margin: 10px;
+    margin: 0px;
 }
 
 /*
@@ -43,10 +43,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
-
-.Titulo-login{
-    font-family: 'Black Han Sans', arial, sans-serif;
-    text-align: center;
-
+.imagem-logo{
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
 }
 
