@@ -41,7 +41,7 @@ function Menu (props){
         {
         pathName: "/cadastro",
         icon: <MdPersonAdd/>,
-         text: "Cadastrro",
+         text: "Cadastro",
          },
 
         {

@@ -17,20 +17,12 @@ function Login() {
 }
 
     return ( 
-        <div className = "Pagina-login"> 
-
-                    <div className= "Bloco1"> 
-                   
-                   <img className = "Logo-Login" src="./imagem/Logo1.png"/>
-
-                    </div>
-
-                    <div className ="Bloco2"> 
+        <div className = "Pagina-login" > 
+        <div className= "box-logomarca"></div>
+            <div className = "box-login">
+                <Form>
                     
-
-                    <div className = "box-login">
-                    <Form>
-                    <h1 className = "Titulo-login"> Resende Business</h1>
+                    <img className = "imagem-logo" src= "./imagem/Logo.png"/> 
                     <p></p>
                     <div className="Conteudo-box-login">
                         <p className = "Subtitulo-login"> Faça seu Login: </p> 
