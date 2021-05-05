@@ -80,7 +80,7 @@ function Menu (props){
 
                     <div className="userContainer">
                         <p className="userName">Resende Business</p>
-                        <Avatar alt="Resende Costa" src="/imagem/Logo.png" />
+                        <Avatar alt="Resende Costa" src="/imagem/Logo1.png" />
                     </div>
 
                 </Toolbar>

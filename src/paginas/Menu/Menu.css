@@ -6,8 +6,10 @@
     color: #292525;
     margin-left: 15px;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 .userName{
+    font-family: 'Black Han Sans', arial, sans-serif;
+    text-align: center;
     color: #343434;
     margin: 0;
     margin-right: 7px;

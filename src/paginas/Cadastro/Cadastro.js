@@ -6,10 +6,10 @@ import Menu from "../Menu"
 function Cadastro() {
             return ( 
               
-                <div className ="bas">
+                <div className ="Pagina-Cadastro">
                     <Menu/>
 
-                    <div className="conteiner">
+                    <div className="Parte1">
                         <Form>
                             <h1>Cadaaaa</h1>
                             <Form.Group controlId="formBasicName">
@@ -67,13 +67,23 @@ function Cadastro() {
                                 <Form.Control as="textarea" rows={3} />
                             </Form.Group>
                             <Form.Group id="formGridCheckbox">
-                                <Form.Check type="checkbox" label="I'm not a robot" />
+                                <Form.Check type="checkbox" label="Eu não sou um robô. 🕵🏾" />
                             </Form.Group>
                             <Button className = "Button-Cadastrar" variant="primary" size="lg" block>
                                 Cadastrar 
                             </Button>
+                            <p>
+
+                            </p>
                         </Form>
                     </div>
+
+                    <div className ="Parte2">
+                        <p> </p>
+Aqui 
+
+                    </div>
+
                 </div>
             );
 }

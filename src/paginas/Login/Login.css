@@ -1,19 +1,19 @@
 .Pagina-login{
     height: 100%;
     display: flex;
-    align-items: center; /*Alinha o item na direção Y*/
-    justify-content: center; /*Alinha o item na direção X*/
-    background-color:#70c1b3;
-    /*background-image: url("foto.png") ; Coloca foto no background   */
+   /* align-items: center; /*Alinha o item na direção Y*/
+  /*  justify-content: center; /*Alinha o item na direção X*/
+    background-color: #E5D5C6;
+    
 
 }
 
 .box-login{
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    width: 300px;
-    height: 500px;
+    max-width: 400px;
+    width: 400px;
+    height: 600px;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
@@ -26,15 +26,24 @@
     margin: 10px;
 }
 
-/*
-.box-logomarca{
+.Bloco1{
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.Bloco2{
     display: flex;
-    align-items: left;
-    
-    width: 20px;
-    height: 50px;
-    
-}*/
+    height:100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .login{
     align-items: center; /*Alinha o item na direção Y*/
@@ -50,3 +59,7 @@
 
 }
 
+.Logo-Login{
+    height: 100%;
+    width: 100%;
+}

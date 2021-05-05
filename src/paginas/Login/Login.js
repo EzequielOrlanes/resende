@@ -17,10 +17,19 @@ function Login() {
 }
 
     return ( 
-        <div className = "Pagina-login" > 
-        <div className= "box-logomarca"></div>
-            <div className = "box-login">
-                <Form>
+        <div className = "Pagina-login"> 
+
+                    <div className= "Bloco1"> 
+                   
+                   <img className = "Logo-Login" src="./imagem/Logo1.png"/>
+
+                    </div>
+
+                    <div className ="Bloco2"> 
+                    
+
+                    <div className = "box-login">
+                    <Form>
                     <h1 className = "Titulo-login"> Resende Business</h1>
                     <p></p>
                     <div className="Conteudo-box-login">
@@ -36,8 +45,9 @@ function Login() {
                         <Link to=" ">Esqueci minha senha</Link><h1> </h1>
                         <AddButon/>
                     </div>
-                </Form>
+                    </Form>
             </div>
+        </div>
         </div>
     )
 }
