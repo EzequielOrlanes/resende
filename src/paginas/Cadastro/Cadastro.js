@@ -6,12 +6,14 @@ import Menu from "../Menu"
 function Cadastro() {
             return ( 
               
-                <div className ="bas">
+                <div className ="Pagina-Cadastro">
                     <Menu/>
 
-                    <div className="conteiner">
+                    <div className="Parte1">
                         <Form>
-                            <h1>Cadaaaa</h1>
+                            <h1>Cadastro</h1>
+                            <p>
+                            </p>
                             <Form.Group controlId="formBasicName">
                             <Form.Label>Nome da Empresa</Form.Label>
                                 <Form.Control type="name" placeholder="Nome" />
@@ -33,13 +35,14 @@ function Cadastro() {
                                 <Form.Control type="name" placeholder="EX: 99.999.999/9999-99" />
                             </Form.Group>
                             <Form.Group>
-                                <Form.Label>Qual a área de atuação do seu empreendimento</Form.Label>
+                                <Form.Label>Área de atuação do empreendimento</Form.Label>
                                 <Form.Control as="select" size="lg">
-                                <option>Escolha...</option>  
+                                <option>Selecione uma opção</option>  
                                 <option>Artesanato</option>
                                 <option>Alimentos</option>
                                 <option>Vestuário</option>
                                 <option>Produtos para casa</option>
+                                <option>Outros</option>
                             </Form.Control>
                             </Form.Group>
                             <Form.Group controlId="formBasicName">
@@ -52,7 +55,7 @@ function Cadastro() {
                             </Form.Group>
                             <Form.Row>
                                 <Form.Group as={Col} controlId="formGridName">
-                                    <Form.Label>Numero</Form.Label>
+                                    <Form.Label>Número</Form.Label>
                                     <Form.Control type="name" placeholder="Numero" />
                                 </Form.Group>
 
@@ -63,17 +66,27 @@ function Cadastro() {
                             </Form.Row>
 
                             <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Nos fale sobre seu empreendimento</Form.Label>
+                                <Form.Label>Descrição sobre o empreendimento</Form.Label>
                                 <Form.Control as="textarea" rows={3} />
                             </Form.Group>
                             <Form.Group id="formGridCheckbox">
-                                <Form.Check type="checkbox" label="I'm not a robot" />
+                                <Form.Check type="checkbox" label="Eu não sou um robô. 🕵🏾" />
                             </Form.Group>
                             <Button className = "Button-Cadastrar" variant="primary" size="lg" block>
                                 Cadastrar 
                             </Button>
+                            <p>
+
+                            </p>
                         </Form>
                     </div>
+
+                    <div className ="Parte2">
+                        <p> </p>
+Aqui 
+
+                    </div>
+
                 </div>
             );
 }

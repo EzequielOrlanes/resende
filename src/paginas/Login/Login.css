@@ -1,19 +1,19 @@
 .Pagina-login{
     height: 100%;
     display: flex;
-    align-items: center; /*Alinha o item na direção Y*/
+   align-items: center; /*Alinha o item na direção Y*/
     justify-content: center; /*Alinha o item na direção X*/
-    background-color:#70c1b3;
-    /*background-image: url("foto.png") ; Coloca foto no background   */
+    background-color: #E5D5C6;
+    
 
 }
 
 .box-login{
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    width: 300px;
-    height: 500px;
+    max-width: 45vh;
+    width: 45vh;
+    height: 85vh;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
@@ -23,18 +23,27 @@
     /*border-spacing: 1ex;*/
 }
 .Conteudo-box-login{
-    margin: 10px;
+    margin: 0px;
 }
 
-/*
-.box-logomarca{
+.Bloco1{
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.Bloco2{
     display: flex;
-    align-items: left;
-    
-    width: 20px;
-    height: 50px;
-    
-}*/
+    height:100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .login{
     align-items: center; /*Alinha o item na direção Y*/
@@ -43,10 +52,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 
-
-.Titulo-login{
-    font-family: 'Black Han Sans', arial, sans-serif;
-    text-align: center;
-
+.imagem-logo{
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
 }
 
+.Logo-Login{
+    height: 100%;
+    width: 100%;
+}
