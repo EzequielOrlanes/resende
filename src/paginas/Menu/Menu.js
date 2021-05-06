@@ -69,7 +69,7 @@ function Menu (props){
             <AppBar position="static" style= {{backgroundColor: "Khaki"}}>
                 {props.children}
 
-                <Toolbar style= {{backgroundColor: "Khaki"}}>
+                <Toolbar  style= {{backgroundColor: "Khaki"}} style= {{width: "100%"}}>
 
                     <IconButton
                         edge="start" 
@@ -78,13 +78,7 @@ function Menu (props){
                         <MdMenu/>
                     </IconButton>
 
-                    <div className="userContainer">
-                        <p className="userName">Resende Business</p>
-                      
-                            <img scr="/imagem/Logo.png"/>
-                        
-                    </div>
-
+                   
                 </Toolbar>
 
             </AppBar>
@@ -113,3 +107,11 @@ function Menu (props){
 }
 
 export default Menu;
+
+
+/*<div className="userContainer">
+                        <p className="userName"> Resende Business</p>
+                      
+                            <img scr="/imagem/Logo.png"/>
+
+                    </div>*/ 

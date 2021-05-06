@@ -7,6 +7,7 @@ function Cadastro() {
             return ( 
               
                 <div className ="Pagina-Cadastro">
+                    
                     <Menu/>
 
                     <div className="Parte1">

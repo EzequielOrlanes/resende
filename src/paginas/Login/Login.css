@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-   align-items: center; /*Alinha o item na direção Y*/
+    align-items: center; /*Alinha o item na direção Y*/
     justify-content: center; /*Alinha o item na direção X*/
     background-image: url(./image3.jpg);
     background-attachment: fixed;
@@ -25,7 +25,7 @@
     border-radius: .5rem;
     box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
     position: absolute;
-    /*border-spacing: 1ex;*/
+ 
 }
 .Conteudo-box-login{
     margin: 0px;
@@ -53,6 +53,11 @@
 .login{
     align-items: center; /*Alinha o item na direção Y*/
     justify-content: center;
+}
+.Subtitulo-login{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:whitesmoke;
+
 }
 
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
