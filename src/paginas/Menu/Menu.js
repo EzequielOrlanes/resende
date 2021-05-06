@@ -66,10 +66,10 @@ function Menu (props){
 
     return (
         <>
-            <AppBar position="static" style= {{backgroundColor: "whitesmoke"}}>
+            <AppBar position="static" style= {{backgroundColor: "Khaki"}}>
                 {props.children}
 
-                <Toolbar style= {{backgroundColor: "whitesmoke"}}>
+                <Toolbar style= {{backgroundColor: "Khaki"}}>
 
                     <IconButton
                         edge="start" 
@@ -80,7 +80,9 @@ function Menu (props){
 
                     <div className="userContainer">
                         <p className="userName">Resende Business</p>
-                        <Avatar alt="Resende Costa" src="/imagem/Logo1.png" />
+                      
+                            <img scr="/imagem/Logo.png"/>
+                        
                     </div>
 
                 </Toolbar>

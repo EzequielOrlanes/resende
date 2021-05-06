@@ -4,7 +4,6 @@
    align-items: center; /*Alinha o item na direção Y*/
     justify-content: center; /*Alinha o item na direção X*/
     background-color: #E5D5C6;
-    
 
 }
 
@@ -17,9 +16,10 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    background-color:#F5F5DC;
+    background-color: transparent;
     border-radius: .5rem;
     box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
+    position: absolute;
     /*border-spacing: 1ex;*/
 }
 .Conteudo-box-login{
@@ -56,6 +56,14 @@
     height: 35vh;
     align-items: center;
     justify-content: center;
+}
+
+.imagem-fundo{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .Logo-Login{
