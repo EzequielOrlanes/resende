@@ -18,6 +18,7 @@ function Login() {
 
     return ( 
         <div className = "Pagina-login" > 
+        <img className = "imagem-fundo" src= "./imagem/image3.jpg"/>
         <div className= "box-logomarca"></div>
             <div className = "box-login">
                 <Form>
