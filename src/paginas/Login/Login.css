@@ -1,9 +1,13 @@
 .Pagina-login{
     height: 100%;
+    width: 100%;
     display: flex;
    align-items: center; /*Alinha o item na direção Y*/
     justify-content: center; /*Alinha o item na direção X*/
-    background-color: #E5D5C6;
+    background-image: url(./image3.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     
 
 }
@@ -17,7 +21,7 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    background-color:#F5F5DC;
+    background-color:transparent;
     border-radius: .5rem;
     box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
     /*border-spacing: 1ex;*/
