@@ -13,18 +13,15 @@
     color: #343434;
     margin: 0;
     margin-right: 7px;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-family: 'Arial, Helvetica, sans-serif';
+    width: 10em;
 }
 
 .userContainer{
     display: flex;
     align-items: center;
-    margin-left: 530px;
-    
+    margin-left: 480px;   
 }
 
-.MuiAppBar-colorPrimary{
 
-    color: violet;
-    color: none;
-}
