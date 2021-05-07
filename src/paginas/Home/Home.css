@@ -1,5 +1,6 @@
 .pag-home{
     display: flex;
+    background-color: #E5D5C6;
     width:100%;
     height:100%;
     flex-wrap: wrap; /*Deixa um bloco abaixo do outro*/
@@ -49,7 +50,7 @@
 .footer {
     border-radius: .5rem;
     box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
-    background: #ccc9a5;
+    background: #ffea00;
     width: 100%;
 }
 
