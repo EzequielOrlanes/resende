@@ -70,20 +70,11 @@ function Menu (props){
                         <MdMenu/>
                     </IconButton>
 
-                    <div className="userContainer">
-                        <p className="userName">
-                            <div class="container">
-                                <div class="elemento">
-                                    <img src= "./imagem/Logo4.png"/> 
-                                </div>
-                                <div class="elemento2">
-                                    <img src= "./imagem/Loguinho.png"/>  
-                                </div>
-                            </div>
-                        </p>
-
+                    <div class="elemento">
+                        <img src= "./imagem/Logo4.png"/> 
+                        <img src= "./imagem/Loguinho.png"/> 
                     </div>
-
+            
                 </Toolbar>
 
             </AppBar>
