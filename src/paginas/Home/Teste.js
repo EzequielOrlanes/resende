@@ -20,27 +20,27 @@ function App() {
         <Carousel breakPoints={breakPoints}>
           <Item>
           <article class="card">
-                        <img src="/imagem/4.jpg" />
+                        <img src="/imagem/tapete.png" />
                     <div class="content">
-                        <p> Tricô e Crochê </p>
+                        <p> Tapetes </p>
                     </div>
 
                     </article>
                 </Item>
           <Item><article class="card">
                         
-                            <img src="/imagem/3.jpg" />
+                            <img src="/imagem/porcelanas.png" />
                     <div class="content">
-                       <p>Feitas de material reciclável</p>
+                       <p>Porcelas</p>
                     </div>
                     </article></Item>
           <Item><article class="card">
                         <header>
                             <h2>Potes</h2>
                         </header>    
-                            <img src="/imagem/2.jpg" />
+                            <img src="/imagem/almofada.png" />
                             <div class="content">
-                             <p>Crochê e enfeite de vidros</p>
+                             <p>Almofadas</p>
                             </div>
                         
                     </article></Item>
@@ -48,15 +48,39 @@ function App() {
                                 <header>
                                 <h2>Vasos</h2>
                                 </header>    
-                                 <img src="/imagem/1.jpg" />
+                                 <img src="/imagem/prataria.png" />
                         <div class="content">
-                        <p> Artesanato com argila </p>
+                        <p> Pratarias </p>
                         </div>
                  </article></Item>
-          <Item>Five</Item>
-          <Item>Six</Item>
-          <Item>Seven</Item>
-          <Item>Eight</Item>
+          <Item><article class="card">
+                        
+                        <img src="/imagem/1.jpg" />
+                <div class="content">
+                   <p>Decoração</p>
+                </div>
+                </article></Item>
+          <Item><article class="card">
+                        
+                        <img src="/imagem/2.jpg" />
+                <div class="content">
+                   <p>Para cozinha</p>
+                </div>
+                </article></Item>
+          <Item><article class="card">
+                        
+                        <img src="/imagem/3.jpg" />
+                <div class="content">
+                   <p>Bolsas</p>
+                </div>
+                </article></Item>
+          <Item><article class="card">
+                        
+                        <img src="/imagem/4.jpg" />
+                <div class="content">
+                   <p>Tricô e Crochê</p>
+                </div>
+                </article></Item>
         </Carousel>
       </div>
     </>
