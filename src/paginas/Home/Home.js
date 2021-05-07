@@ -9,14 +9,21 @@ function Home() {
         <>
         <div className = "pag-home">    
             <Menu/>
-            <Teste/>
+            <div className = "cidade"/>
+
+                <div className = "Home">
+                    <Teste/>
+                </div>
             
-            <div className = "Home">
-                
-            </div>
-                <div className ="content"> Bloco 2
-                    </div> 
-                        < div className ="footer"> 
+                <div className ="content">
+                    <h2>Empreendedores Destaque do mês</h2>
+                            <div className = "box1">
+                                <img src = "/imagem/1.jpg"/>
+                            </div>
+                        </div>
+                            
+                            
+                            < div className ="footer"> 
                             <p> 
                             Resende Business - Avenida Barbacena.
                             <p>Número 1219 - Santo Agostinho. </p>
