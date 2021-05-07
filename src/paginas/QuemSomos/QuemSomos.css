@@ -1,76 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .Pagina-QuemSomos{
     display: flex;
     width:100%;
-    height: 100%;
+    height: 70%;
     flex-wrap: wrap; /*Deixa um bloco abaixo do outro*/
 }
 
 .Pagina1{
 	background:white;
     width: 100%;
-    height: 100%;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
 .Caixa1{
     display: flex;
-    margin: 20px;
-    height: 400px;
+    margin: 5px;
+    height: 200px;
     width: 1000px;
     flex-wrap: wrap;
-  
 }
-
-
 
 .content {
     width: 100%;
     height: 100%;
     display: flex;
-
 }
 
 .Pagina2{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 450px;
     background-color:black;
-   
 }
 
 .Pagina3 {
-    border-radius: .5rem;
-    box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
-	background: #C2D7D0;
+	background:white;
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .header-quemsomos{
  width: 100%;
  height: 40px;
-
 }
 
-
 .Titulo-QuemSomos{
-    font-family: 'Black Han Sans', arial, sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
     align-items: center;
     align-items: center;
     text-rendering: optimizelegibility;
 }
 
 .Textodeapresentação{
-    font-family:'Fredoka One', cursive; 
-    size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    size: 90px;
     width:1000px;
     height:400px;
     margin:10px;
@@ -79,33 +74,57 @@
 
 .Fto{
   display: flex;
-  height: 70%;
+  height: 100%;
   width: 100%;
-
 }
-
 
 .Fto2{
     display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.Caixa2{
+    display: flex;
+    margin: 5px;
     height: 200px;
-    width: auto;
-    align-items: baseline;
+    width: 1000px;
+    flex-wrap: wrap;
 }
 
-
-
-.caixa1{
-font-family:'Fredoka One', cursive; 
-
+.header-duvidas{
+    width: 100%;
+    height: 40px;
+}
+   
+.Titulo-duvidas{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    align-items: center;
+    align-items: center;
+    text-rendering: optimizelegibility;
 }
 
-.caixa2{
+.pergunta1{
+    font-family:'Lato', sans-serif;
+    size: 90px;
+    width:1000px;
+    height:10px;
+    margin:10px;
+}
+
+.resposta1{
+    font-family: 'Montserrat', sans-serif;
+    size: 90px;
+    width:1000px;
+    height:10px;
+    margin:10px;
+}
+
+.Caixa3{
+    font-family:'Fredoka One', cursive;
+}
+
+.Caixa4{
     font-family:'Fredoka One', cursive; 
-    
-    }
-
-    .caixa3{
-        font-family:'Fredoka One', cursive; 
-        
-        }
-
+}

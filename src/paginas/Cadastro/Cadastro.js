@@ -12,9 +12,12 @@ function Cadastro() {
 
                     <div className="Parte1">
                         <Form>
+                            <div className = "titulo-cadastro">
                             <h1>Cadastro</h1>
                             <p>
-                            </p>
+                            </p>                    
+                            </div>
+  
                             <Form.Group controlId="formBasicName">
                             <Form.Label>Nome da Empresa</Form.Label>
                                 <Form.Control type="name" placeholder="Nome" />

@@ -1,14 +1,13 @@
 .pag-home{
     display: flex;
-    background-color: #E5D5C6;
+    background-color: white;
     width:100%;
     height:100%;
     flex-wrap: wrap; /*Deixa um bloco abaixo do outro*/
-    background: #E5D5C6;
 }
 
 .Home{
-    background: #E5D5C6;
+    background:white;
     width: 100%;
 }
 .h2{
@@ -16,7 +15,7 @@
     font-family:'Times New Roman', Times, serif;
     size: 5rem;
     text-align: center;
-    color: rgb(252, 249, 249);
+    color: white;
 }
 
 .imagem{
@@ -26,15 +25,16 @@
 }
 
 .content {
-    background: #e5d5c6;
+    background: white;
     width: 100%;
     text-align: center;
     align-items: center;
     display: flex;
+    color: black;
 }
 
 .navigation {
-    background: #E5D5C6;
+    background: white;
     height: 50px;
     size: 7rem;
     width: 100%;
@@ -43,7 +43,7 @@
 }
 
 .titulo{
-    size: 1.2rem;
+    size: 0.3rem;
     margin-left: 550px;  
 
 }
@@ -51,7 +51,7 @@
 .footer {
     border-radius: .5rem;
     box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
-    background: #ffea00;
+    background: whitesmoke;
     width: 100%;
     padding: 15px;
 }
@@ -81,10 +81,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 60vh;
   width: 200vh;
   margin-left: 50px;
-  background-color: #E5D5C6;
+  background-color: white;
+  margin-bottom: 20px;
 }
 
 .h7{
@@ -120,7 +121,7 @@
 .images{
     display: flex;
     flex-direction: column;
-    margin-left: 500px;
+    margin-left: 300px;
 }
 
 .titulos{
@@ -133,9 +134,10 @@
 .nome{
     display: flex;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 15px;
     margin-right: 100 px;
+    height: 100px;
 }
 
 .bloco2{
