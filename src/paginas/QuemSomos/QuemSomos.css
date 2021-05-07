@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 .Pagina-QuemSomos{
     display: flex;
     width:100%;
@@ -5,81 +7,105 @@
     flex-wrap: wrap; /*Deixa um bloco abaixo do outro*/
 }
 
-
-.header{
+.Pagina1{
 	background:white;
     width: 100%;
-    display: flex;
-}
-.Titulo{
-    display: flex;
     height: 100%;
-    width: 20%;
-}
-.Apresentação{
     display: flex;
-    height: 100%;
-    width: 40%;
+    align-items: center;
+    justify-content: center;
 }
-.box1{
+
+
+.Caixa1{
     display: flex;
-    height:100%;
-    width: 80%;
-    
+    margin: 20px;
+    height: 400px;
+    width: 1000px;
+    flex-wrap: wrap;
+  
 }
+
 
 
 .content {
-	background: #b7d84b;
     width: 100%;
+    height: 100%;
+    display: flex;
 
-    
+}
+
+.Pagina2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:black;
    
 }
-.navigation {
-	background: #e2a741;
-    width: 100%;
-}
 
-.footer {
+.Pagina3 {
     border-radius: .5rem;
     box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
 	background: #C2D7D0;
     width: 100%;
+    height: 100%;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+.header-quemsomos{
+ width: 100%;
+ height: 40px;
 
 }
 
 
-
-
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 .Titulo-QuemSomos{
     font-family: 'Black Han Sans', arial, sans-serif;
-    text-align: center;
-    height: 50%;
-    width: 10%;
-    flex-wrap: wrap;
-    margin-right: 30px;
-    margin-left: 5px;
-    margin: 15px;
+    align-items: center;
+    align-items: center;
+    text-rendering: optimizelegibility;
 }
 
 .Textodeapresentação{
-    font-family: 'Black Han Sans', arial, sans-serif;
-    text-align: center;
-    align-items: left;
-    height: 80%;
-    width: 80%;
-    margin: 15px; 
+    font-family:'Fredoka One', cursive; 
+    size: 50px;
+    width:1000px;
+    height:400px;
+    margin:10px;
+    margin-top:50px; 
+}
+
+.Fto{
+  display: flex;
+  height: 70%;
+  width: 100%;
 
 }
 
 
-
-.Foto{
-    
-    height: 100%;
-    width: 100%;
+.Fto2{
     display: flex;
+    height: 200px;
+    width: auto;
+    align-items: baseline;
 }
+
+
+
+.caixa1{
+font-family:'Fredoka One', cursive; 
+
+}
+
+.caixa2{
+    font-family:'Fredoka One', cursive; 
+    
+    }
+
+    .caixa3{
+        font-family:'Fredoka One', cursive; 
+        
+        }
 
