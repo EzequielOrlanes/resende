@@ -16,15 +16,16 @@ function Home() {
             </div>
                 <div className ="content"> Bloco 2
                     </div> 
-                        < div className ="footer"> 
+                        <div className ="footer"> 
                             <p> 
                             Resende Business - Avenida Barbacena.
                             <p>Número 1219 - Santo Agostinho. </p>
                             CEP: 30190-924 - Belo Horizonte/MG.<h1> </h1>
                             CNPJ: 00.416.968/0001-01.
                             </p>
-                    </div>
-                </div></>
+                        </div>
+        </div>
+        </>
 
     );
 

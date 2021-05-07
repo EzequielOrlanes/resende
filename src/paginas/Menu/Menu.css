@@ -10,9 +10,9 @@
 .userName{
     font-family: 'Black Han Sans', arial, sans-serif;
     text-align: center;
-    color: #343434;
-    margin: 0;
-    margin-right: 7px;
+    color: #fffdfd;
+    margin-left:auto;
+    margin-right:auto;
     font-size: 2rem;
     font-family: 'Arial, Helvetica, sans-serif';
     width: 10em;
@@ -21,7 +21,38 @@
 .userContainer{
     display: flex;
     align-items: center;
-    margin-left: 480px;   
+    margin-left:auto;
+    margin-right:auto; 
 }
 
 
+.barra{
+    background: linear-gradient( #4B3621,#4b36218a,#4B3621);
+    width: 100%;
+    height: 100px;
+}
+
+.container{
+    background:rgba(238, 238, 238, 0);
+    height: 10vh;
+    position: relative;
+
+}
+.elemento{
+    background: rgba(0, 0, 0, 0);
+    color:#FFF;
+    position:absolute;
+    top:20px;
+    margin-left:auto;
+    margin-right:auto; 
+}
+
+.elemento2{
+    background: rgba(0, 0, 0, 0);
+    color:#FFF;
+    position:absolute;
+    top:0px;
+    margin-left:auto;
+    margin-right:auto; 
+    left:450px;
+}
