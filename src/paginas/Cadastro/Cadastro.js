@@ -1,14 +1,14 @@
 import React from "react";
 import {Form, Col,Button} from "react-bootstrap"
 import "./Cadastro.css"
-import Menu from "../Menu"
+import AddButon from "./AddButton"
 
 function Cadastro() {
             return ( 
               
                 <div className ="Pagina-Cadastro">
                     
-                    <Menu/>
+                    
 
                     <div className="Parte1">
                         <Form>
@@ -30,6 +30,9 @@ function Cadastro() {
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>Confirme sua Senha</Form.Label>
                                 <Form.Control type="password" placeholder="Senha" />
+                            </Form.Group>
+                            <Form.Group id="formGridCheckbox">
+                                <Form.Check type="checkbox" label="Empresa" />
                             </Form.Group>
                             <Form.Group controlId="formBasicName">
                                 <Form.Label>CNPJ</Form.Label>
@@ -81,12 +84,7 @@ function Cadastro() {
                             </p>
                         </Form>
                     </div>
-
-                    <div className ="Parte2">
-                        <p> </p>
-Aqui 
-
-                    </div>
+                    <AddButon/>
 
                 </div>
             );

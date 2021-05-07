@@ -39,12 +39,6 @@ function Menu (props){
         },
 
         {
-        pathName: "/cadastro",
-        icon: <MdPersonAdd/>,
-         text: "Cadastro",
-         },
-
-        {
         pathName: "/empreendimentos",
         icon: <MdExplicit/>,
         text: "Empreendimentos",
