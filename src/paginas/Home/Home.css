@@ -26,10 +26,11 @@
 }
 
 .content {
-    background: #E5D5C6;
+    background: #e5d5c6;
     width: 100%;
     text-align: center;
     align-items: center;
+    display: flex;
 }
 
 .navigation {
@@ -108,8 +109,37 @@
 
 .box1{
     display: flex;
-    width: 100%;
+    width: 20%;
     height: 20%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
 }
 
+.images{
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+}
+
+.nome{
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    margin-right: 100 px;
+}
+
+.bloco2{
+    color: #070807;
+    text-align: center;
+    margin-left: 320px;
+}
 
