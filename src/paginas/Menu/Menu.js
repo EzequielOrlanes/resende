@@ -66,11 +66,9 @@ function Menu (props){
 
     return (
         <>
-            <AppBar position="static" style= {{backgroundColor: "Khaki"}}>
+            <AppBar position="static" style= {{backgroundColor: "Transparent"}}>
                 {props.children}
-
-                <Toolbar  style= {{backgroundColor: "Khaki"}} style= {{width: "100%"}}>
-
+                <Toolbar className="barra">
                     <IconButton
                         edge="start" 
                         aria-label="menu"
@@ -78,7 +76,20 @@ function Menu (props){
                         <MdMenu/>
                     </IconButton>
 
-                   
+                    <div className="userContainer">
+                        <p className="userName">
+                            <div class="container">
+                                <div class="elemento">
+                                    <img src= "./imagem/Logo4.png"/> 
+                                </div>
+                                <div class="elemento2">
+                                    <img src= "./imagem/Loguinho.png"/>  
+                                </div>
+                            </div>
+                        </p>
+
+                    </div>
+
                 </Toolbar>
 
             </AppBar>

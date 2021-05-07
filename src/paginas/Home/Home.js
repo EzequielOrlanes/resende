@@ -17,7 +17,6 @@ function Home() {
                 <div className ="content"> 
                 
                     </div> 
-
                         <div className ="footer"> 
                             <p> 
                             Resende Business - Avenida Barbacena.
@@ -25,8 +24,9 @@ function Home() {
                             CEP: 30190-924 - Belo Horizonte/MG.
                             CNPJ: 00.416.968/0001-01.
                             </p>
-                    </div>
-                </div></>
+                        </div>
+        </div>
+        </>
 
     );
 
