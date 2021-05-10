@@ -21,7 +21,7 @@ function App() {
           <Item>
           <article class="card">
                         <img src="/imagem/tapete.png" />
-                    <div class="content">
+                    <div class='texto'>
                         <p> Tapetes </p>
                     </div>
 
@@ -30,54 +30,48 @@ function App() {
           <Item><article class="card">
                         
                             <img src="/imagem/porcelanas.png" />
-                    <div class="content">
-                       <p>Porcelas</p>
+                    <div class="texto">
+                       <p>Porcelanas</p>
                     </div>
                     </article></Item>
-          <Item><article class="card">
-                        <header>
-                            <h2>Potes</h2>
-                        </header>    
+          <Item><article class="card">    
                             <img src="/imagem/almofada.png" />
-                            <div class="content">
+                            <div class="texto">
                              <p>Almofadas</p>
                             </div>
                         
                     </article></Item>
-          <Item>   <article class="card">
-                                <header>
-                                <h2>Vasos</h2>
-                                </header>    
+          <Item>   <article class="card">   
                                  <img src="/imagem/prataria.png" />
-                        <div class="content">
+                        <div class="texto">
                         <p> Pratarias </p>
                         </div>
                  </article></Item>
           <Item><article class="card">
                         
                         <img src="/imagem/1.jpg" />
-                <div class="content">
+                <div class="texto">
                    <p>Decoração</p>
                 </div>
                 </article></Item>
           <Item><article class="card">
                         
                         <img src="/imagem/2.jpg" />
-                <div class="content">
+                <div class="texto">
                    <p>Para cozinha</p>
                 </div>
                 </article></Item>
           <Item><article class="card">
                         
                         <img src="/imagem/3.jpg" />
-                <div class="content">
+                <div class="texto">
                    <p>Bolsas</p>
                 </div>
                 </article></Item>
           <Item><article class="card">
                         
-                        <img src="/imagem/4.jpg" />
-                <div class="content">
+                        <img src="/imagem/baianas.jpg" />
+                <div class="texto">
                    <p>Tricô e Crochê</p>
                 </div>
                 </article></Item>
