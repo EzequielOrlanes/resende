@@ -8,10 +8,8 @@
     justify-content: center; /*Alinha o item na direção X*/
     background-image: url(./image3.jpg);
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    
-
 }
 
 .box-login{
@@ -30,7 +28,7 @@
  
 }
 .Conteudo-box-login{
-    margin: 0px;
+    margin: 5px;
 }
 
 .Bloco1{
@@ -83,8 +81,9 @@
 }
 
 .botao-entrar{
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     justify-items: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+    flex-direction: column;
 }

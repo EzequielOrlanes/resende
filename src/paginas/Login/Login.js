@@ -34,11 +34,10 @@ function Login() {
                         <p></p>
                         <div className = "botao-entrar">
                             <Button variant="primary" onClick={login}>ENTRAR</Button>
-                        </div>
                         <p></p>
                         <Link to="cadastro"> Não é cadastrado? </Link><h1> </h1>
                         <Link to=" ">Esqueci minha senha</Link><h1> </h1>
-                        
+                        </div>
                     </div>
                    
                     </Form>

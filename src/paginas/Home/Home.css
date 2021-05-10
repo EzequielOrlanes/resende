@@ -10,6 +10,7 @@
     background:white;
     width: 100%;
 }
+
 .h2{
     display: flex;
     font-family:'Times New Roman', Times, serif;
@@ -41,13 +42,11 @@
     size: 7rem;
     width: 100%;
     justify-content: center;
-    
 }
 
 .titulo{
     size: 0.3rem;
-    margin-left: 550px;  
-
+    margin-left: 550px;
 }
 
 .footer {
@@ -145,8 +144,6 @@
     flex-direction: column;
     margin-right: 300px;
     margin-top: 50px;
-    
-    
 }
 
 .nome{

@@ -7,6 +7,9 @@ import Home from "./paginas/Home";
 import Login from "./paginas/Login";
 import Perfil from "./paginas/Perfil";
 import QuemSomos from "./paginas/QuemSomos";
+import SegredosDeMinas from "./paginas/SegredosDeMinas";
+import TremDeMinasDecor from "./paginas/TremDeMinasDecor";
+import TricoDaVovo from "./paginas/TricoDaVovo";
 
 
 function Routes(){
@@ -31,6 +34,9 @@ function UserMenu(){
                 <Route path="/Perfil" component={Perfil}/>
                 <Route path="/Cadastro" component={Cadastro}/>
                 <Route path="/QuemSomos" component={QuemSomos}/>
+                <Route path="/SegredosDeMinas" component={SegredosDeMinas}/>
+                <Route path="/TremDeMinasDecor" component={TremDeMinasDecor}/>
+                <Route path="/TricoDaVovo" component={TricoDaVovo}/>
                 <Route component={() => <Redirect to="/home"></Redirect>}/>
             </Switch> 
         

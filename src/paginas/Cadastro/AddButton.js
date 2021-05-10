@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 
 const styles = theme => ({
     fab: {
-        position: "absolute",
+        position: "fixed",
         bottom: theme.spacing.unit * 3,
         right: theme.spacing.unit * 3,
     },
@@ -17,9 +17,9 @@ const styles = theme => ({
 function AddButon(props) {
     const {classes} = props
     return (
-        <div>
+        <div className = "botao">
             <Fab color="default" arial-label="Home" className={classes.fab}>
-            <Button variant="inherit">
+            <Button variant="inherit" className = "button">
         <Link to="home"><MdHome/></Link></Button>  
             </Fab>
         </div>
