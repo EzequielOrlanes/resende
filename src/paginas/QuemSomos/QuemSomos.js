@@ -35,12 +35,6 @@ function QuemSomos() {
         <div className = "Caixa2">
           <div className= "header-duvidas"> 
             <h1 className = "Titulo-duvidas">Dúvidas Frequentes</h1> </div>
-              <p className = "pergunta1">
-                Tenho um empreendimento em outra cidade. Posso me cadastrar no site? 
-              </p>
-              <p className = "resposta1">
-                Infelismente, o site é destinado somente a empreendimentos de Resende Costa.
-              </p>
           </div>
         </div>
 
