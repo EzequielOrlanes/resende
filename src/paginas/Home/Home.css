@@ -112,12 +112,11 @@
 .cidade{
     display: flex;
     width: 100%;
-    height: 50vh;
-    background-image: url(./Resende_Costa_vista_do_alto.jpg);
+    height: 60vh;
+    background-image: url(capa-resende-costa.jpg);
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .box1{

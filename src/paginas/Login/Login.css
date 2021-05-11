@@ -25,8 +25,8 @@
     border-radius: .5rem;
     box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
     position: absolute;
- 
 }
+
 .Conteudo-box-login{
     margin: 5px;
 }
@@ -37,7 +37,6 @@
     align-items: center;
     justify-content: center;
     margin: 20px;
-
 }
 
 .Bloco2{
@@ -48,16 +47,14 @@
     justify-content: center;
 }
 
-
-
 .login{
     align-items: center; /*Alinha o item na direção Y*/
     justify-content: center;
 }
+
 .Subtitulo-login{
     font-family:'Montserrat', sans-serif;
     color:black;
-
 }
 
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');

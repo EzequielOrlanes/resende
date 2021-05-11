@@ -28,13 +28,6 @@
   box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
   padding: 20px;
 }
-/*
-.botao{
-  width: 100%;
-  height: 30%;
-  float: right;
-  position:fixed;
-}*/
 
 .button{
   position: fixed;
