@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+.Pagina-Perfil{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.ponto{
+    display: flex;
+    background:white;
+    width: 100vw!important;
+    height: 200px;
+}
+.ima{
+    width: 100%;
+    height: 200px; 
+}

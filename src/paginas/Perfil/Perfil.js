@@ -1,11 +1,17 @@
 import React from "react";
 import Menu from "../Menu"
+import "./Perfil.css";
 
 function Perfil() {
     return (
     <>
     <Menu/>
-    <h1>Perfil</h1>;
+    <div className ="Pagina-Perfil">
+            <div className ="ponto">
+                <img className ="ima" src = "./imagem/capa-resende-costa.jpg"/> 
+            </div>
+
+    </div>
     </>);
 }
 
