@@ -14,7 +14,7 @@ const breakPoints = [
 function App() {
   return (
     <>
-      <h1 className = "h7">Conheça quem torna Resende Costa a cidade do Artesanato</h1>
+      <div className = "h7"><p>Conheça quem torna Resende Costa a cidade do Artesanato</p></div>
       <div className="App">
            
         <Carousel breakPoints={breakPoints}>
@@ -72,7 +72,7 @@ function App() {
                         
                         <img src="/imagem/baianas.jpg" />
                 <div class="texto">
-                   <p>Tricô e Crochê</p>
+                   <p>Argila</p>
                 </div>
                 </article></Item>
         </Carousel>
