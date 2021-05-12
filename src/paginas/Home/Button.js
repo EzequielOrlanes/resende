@@ -1,25 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
+import {useHistory} from "react-router-dom";
+import { ListItem} from  "@material-ui/core";
+
+
 
 const images = [
   {
     url: '/imagem/1.jpg',
     title: 'SAIBA MAIS',
-    width: '40%',
+    width: '40%', 
+    pathName: '/segredosdeminas',
   },
 
   {
     url: '/imagem/2.jpg',
     title: 'SAIBA MAIS',
     width: '40%',
+    pathName: '/tremdeminasdecor',
   },
 
   {
     url: '/imagem/3.jpg',
     title: 'SAIBA MAIS',
     width: '40%',
+    pathName: '/tricodavovo',
   },
 
 ];
@@ -33,7 +40,9 @@ const useStyles = makeStyles((theme) => ({
     margin: '10px',
     marginTop: '15px',
     flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'flex-end',
+    marginLeft: '500px',
+
    
   },
   image: {
@@ -75,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     bottom: 0,
     backgroundSize: 'cover',
-    backgroundPosition: 'center 40%',
+    backgroundPosition: 'center 50%',
   },
   imageBackdrop: {
     position: 'absolute',
@@ -104,10 +113,20 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonBases() {
   const classes = useStyles();
+  const history = useHistory();
+  const [currentPage, setCurrentPage] = useState("/home");
+  function handleClick(pathName){
+    history.push(pathName);
+    setCurrentPage(pathName)
+}
 
   return (
     <div className={classes.root}>
       {images.map((image) => (
+         <ListItem
+         button
+         selected = {currentPage === image.pathName}
+         onClick={()=> {handleClick(image.pathName)}}>
         <ButtonBase
           focusRipple
           key={image.title}
@@ -115,8 +134,10 @@ export default function ButtonBases() {
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: image.width,
+            alignContent: 'right',
           }}
         >
+       
           <span
             className={classes.imageSrc}
             style={{
@@ -125,6 +146,7 @@ export default function ButtonBases() {
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton}>
+            
             <Typography
               component="span"
               variant="subtitle1"
@@ -133,9 +155,11 @@ export default function ButtonBases() {
             >
               {image.title}
               <span className={classes.imageMarked} />
+              
             </Typography>
-          </span>
+          </span>  
         </ButtonBase>
+        </ListItem>
       ))}
     </div>
   );
