@@ -29,6 +29,10 @@
   padding: 20px;
 }
 
-.button{
-  position: fixed;
+.Button-Cadastrar{
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  width: auto;
+  flex-direction: column;
 }
