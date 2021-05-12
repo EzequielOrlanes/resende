@@ -42,7 +42,7 @@ No ano de 1840, mais precisamente no dia 1º de setembro, foi desmembrada da Par
 Desde 1923 o município passou a denominar-se simplesmente Resende Costa</p>
 
                     </div>
-                        <img className='fotocidade' src='/imagem/capa-resende-costa.jpg'></img>
+                        <img className='fotocidade' src='/imagem/baianas.jpg'></img> 
                     </div>
                     
                         <div className ="footer"> 
