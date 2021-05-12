@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import {Drawer, List, ListItem, ListItemText, Typography, IconButton, AppBar, Toolbar, Avatar} from  "@material-ui/core";
-import {MdHome, MdPerson, MdLaptop, MdMenu, MdExplicit, MdPersonAdd, MdHelpOutline, MdLocationCity} from "react-icons/md";
+import {Drawer, List, ListItem, ListItemText, Typography, IconButton, AppBar, Toolbar} from  "@material-ui/core";
+import {MdHome, MdPerson, MdLaptop, MdMenu, MdExplicit, MdHelpOutline, MdLocationCity} from "react-icons/md";
 import { IconContext } from "react-icons/lib";
 import "./Menu.css";
 import {useHistory} from "react-router-dom";
@@ -71,8 +71,8 @@ function Menu (props){
                     </IconButton>
 
                     <div class="elemento">
-                        <img src= "./imagem/Logo4.png"/> 
-                        <img src= "./imagem/Loguinho.png"/> 
+                        <img className='e1' src= "./imagem/Logo4.png"/> 
+                        <img className='e2' src= "./imagem/Loguinho.png"/> 
                     </div>
             
                 </Toolbar>
