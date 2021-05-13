@@ -4,6 +4,7 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import {useHistory} from "react-router-dom";
 import { ListItem} from  "@material-ui/core";
+import "./SaibaMais.css";
 
 
 
@@ -11,22 +12,25 @@ const images = [
   {
     url: '/imagem/1.jpg',
     title: 'SAIBA MAIS',
-    width: '40%', 
+    width: '100%', 
     pathName: '/segredosdeminas',
+    legend: '#1 Segredos de Minas',
   },
 
   {
     url: '/imagem/2.jpg',
     title: 'SAIBA MAIS',
-    width: '40%',
+    width: '100%',
     pathName: '/tremdeminasdecor',
+    legend: '#2 Trem de Minas Decor',
   },
 
   {
     url: '/imagem/3.jpg',
     title: 'SAIBA MAIS',
-    width: '40%',
+    width: '100%',
     pathName: '/tricodavovo',
+    legend: '#3 Tricô da Vovó',
   },
 
 ];
@@ -36,12 +40,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     minWidth: 300,
-    width: '100%',
-    margin: '10px',
-    marginTop: '15px',
+    width: '100vw',
+    // margin: '10px',
+    // marginTop: '15px',
     flexDirection: 'column',
-    alignItems: 'flex-end',
-    marginLeft: '500px',
+    // alignItems: 'flex-end',
+    // marginLeft: '500px',
 
    
   },
@@ -123,6 +127,8 @@ export default function ButtonBases() {
   return (
     <div className={classes.root}>
       {images.map((image) => (
+        <div className='images-map'>
+        <div>
          <ListItem
          button
          selected = {currentPage === image.pathName}
@@ -134,7 +140,8 @@ export default function ButtonBases() {
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: image.width,
-            alignContent: 'right',
+            alignContent: 'content-position',
+            
           }}
         >
        
@@ -160,6 +167,11 @@ export default function ButtonBases() {
           </span>  
         </ButtonBase>
         </ListItem>
+        </div>
+        <div>
+        <h4>{image.legend}</h4>
+        </div>
+        </div>
       ))}
     </div>
   );

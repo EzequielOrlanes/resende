@@ -1,0 +1,13 @@
+.img-section{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.images-map{
+    display: 'flex'; 
+    flex-direction: 'row'; 
+    justify-content: 'center'; 
+    align-content: 'center'; 
+    text-align: 'center';
+
+}

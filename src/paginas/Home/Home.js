@@ -1,8 +1,8 @@
 import React from "react";
 import "./Home.css";
 import Menu from "../Menu";
-import Teste from "./Teste.js";
-import Button from './Button';
+import Carrossel from "./Teste.js";
+import SaibaMais from './SaibaMais';
 
 
 function Home() {
@@ -11,27 +11,22 @@ function Home() {
         <div className = "pag-home">    
             <Menu/>
             <div className = "cidade"/>
-
+                <div className='main-section'>
                 <div className = "Home">
-                    <Teste/>
+                    <Carrossel/>
                 </div>
        
             <div className = "bloco2"><p>EMPREENDIMENTOS DESTAQUES DO MÊS</p></div>
              
-                <div className ="content">
-                     
+                
+                     <div className='Saiba-Mais-section'>
                     <div className = "images">
-                        <Button/>
+                        <SaibaMais/>
                     </div>
 
-                    <div className = "titulos">
-                        <h2 className = "nome">#1 Segredos de Minas</h2>
-                        <h2 className = "nome">#2 Trem de Minas Decor</h2>
-                        <h2 className = "nome">#3 Tricô da Vovó</h2>
-                    </div>
-                       
+                </div> 
                     
-                    </div>
+                </div>
 
                     <div className= 'box3'><h1 className='h1'>HISTÓRIA DA CIDADE</h1>
                         <div className='historia'>
