@@ -1,8 +1,26 @@
 import Menu from "../Menu"
 import React from "react";
 import "./QuemSomos.css";
+import { makeStyles } from '@material-ui/core/styles';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '100%',
+  },
+  heading: {
+    fontSize: theme.typography.pxToRem(15),
+    fontWeight: theme.typography.fontWeightRegular,
+  },
+}));
+
 
 function QuemSomos() {
+  const classes = useStyles();
   return (           
 
   <div className="Pagina-QuemSomos"> 
@@ -35,6 +53,51 @@ function QuemSomos() {
         <div className = "Caixa2">
           <div className= "header-duvidas"> 
             <h1 className = "Titulo-duvidas">Dúvidas Frequentes</h1> </div>
+              <div className = "acordeao">
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <div className="duvida">Não sou de Resende Costa. Posso me inscrever no site?</div>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div className="resposta">
+                      Infelizmente ainda não. A plataforma é destinada apenas aos empreendedores que residem em Resende Costa.
+                    </div>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                  >
+                    <div className="duvida">Quais são os requesitos para me inscrever?</div>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div className="resposta">
+                      É importante que você que você seja um produtor aqui da nossa cidade, além disso, é importante que você já produza a um tempo considerável. Caso você já esteja filiado a algumas cooperativa favor nos informar.
+                   </div>
+                  </AccordionDetails>
+
+                  </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <div className="duvida"> O que posso vender no Resende's Business ?</div>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div className="resposta">
+                      Nosso site é focado em produtores de artezanatos e manufaturados.
+                    </div>
+                  </AccordionDetails>
+                </Accordion>
+              </div>
           </div>
         </div>
 
