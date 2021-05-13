@@ -42,19 +42,14 @@ function Cadastro() {
                                 <Form.Check type="checkbox" label="Empresa" />
                             </Form.Group>
                             <Form.Group controlId="formBasicName">
-                                <Form.Label>CNPJ</Form.Label>
-                                <Form.Control type="name" placeholder="EX: 99.999.999/9999-99" />
+                                <Form.Label>CNPJ / CPF</Form.Label>
+                                <Form.Control type="name" placeholder="Ex: 99.999.999/9999-99" />
                             </Form.Group>
                             <Form.Group>
+                            <Form.Group controlId="formBasicName">
                                 <Form.Label>Área de atuação do empreendimento</Form.Label>
-                                <Form.Control as="select" size="lg">
-                                <option>Selecione uma opção</option>  
-                                <option>Artesanato</option>
-                                <option>Alimentos</option>
-                                <option>Vestuário</option>
-                                <option>Produtos para casa</option>
-                                <option>Outros</option>
-                            </Form.Control>
+                                <Form.Control type="name" placeholder="Ex: artesanato, alimentos, vestuário, outros" />
+                            </Form.Group>
                             </Form.Group>
                             <Form.Group controlId="formBasicName">
                             <Form.Label>Outros</Form.Label>
@@ -63,7 +58,7 @@ function Cadastro() {
 
                             <Form.Group controlId="formBasicName">
                                 <Form.Label>Telefone para contato</Form.Label>
-                                <Form.Control type="name" placeholder="EX: (99)99999-9999" />
+                                <Form.Control type="name" placeholder="Ex: (99)99999-9999" />
                             </Form.Group>
                             <Form.Group controlId="formBasicName">
                             <Form.Label>Endereço</Form.Label>

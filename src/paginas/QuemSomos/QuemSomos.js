@@ -64,7 +64,7 @@ function QuemSomos() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <div className="resposta">
-                      Infelizmente ainda não. A plataforma é destinada apenas aos empreendedores que residem em Resende Costa.
+                      Infelizmente não. A plataforma é destinada apenas a empreendedores que residem em Resende Costa.
                     </div>
                   </AccordionDetails>
                 </Accordion>
@@ -78,7 +78,8 @@ function QuemSomos() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <div className="resposta">
-                      É importante que você que você seja um produtor aqui da nossa cidade, além disso, é importante que você já produza a um tempo considerável. Caso você já esteja filiado a algumas cooperativa favor nos informar.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                      sit amet blandit leo lobortis eget.
                    </div>
                   </AccordionDetails>
 
@@ -95,6 +96,36 @@ function QuemSomos() {
                     <div className="resposta">
                       Nosso site é focado em produtores de artezanatos e manufaturados.
                     </div>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                  >
+                    <div className="duvida">Onde fica a cidade de Resende Costa?</div>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div className="resposta">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                      sit amet blandit leo lobortis eget.
+                   </div>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                  >
+                    <div className="duvida">Precisa pagar para se cadastrar no site?</div>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div className="resposta">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                      sit amet blandit leo lobortis eget.
+                   </div>
                   </AccordionDetails>
                 </Accordion>
               </div>
