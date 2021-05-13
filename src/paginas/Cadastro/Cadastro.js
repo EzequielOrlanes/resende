@@ -51,10 +51,6 @@ function Cadastro() {
                                 <Form.Control type="name" placeholder="Ex: artesanato, alimentos, vestuário, outros" />
                             </Form.Group>
                             </Form.Group>
-                            <Form.Group controlId="formBasicName">
-                            <Form.Label>Outros</Form.Label>
-                                <Form.Control type="outros" placeholder="Outros" />
-                            </Form.Group>
 
                             <Form.Group controlId="formBasicName">
                                 <Form.Label>Telefone para contato</Form.Label>
