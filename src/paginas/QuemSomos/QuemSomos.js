@@ -60,11 +60,11 @@ function QuemSomos() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <div className="duvida1">Não sou de Resende Costa. Posso me inscrever no site?</div>
+                    <div className="duvida">Não sou de Resende Costa. Posso me inscrever no site?</div>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <div className="resposta1">
-                      Infelizmente não. A plataforma é destinada apenas a empreendedores que residem em Resende Costa.
+                    <div className="resposta">
+                      Infelizmente ainda não. A plataforma é destinada apenas aos empreendedores que residem em Resende Costa.
                     </div>
                   </AccordionDetails>
                 </Accordion>
@@ -74,13 +74,27 @@ function QuemSomos() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <div className="duvida2">Quais são os requesitos para me inscrever?</div>
+                    <div className="duvida">Quais são os requesitos para me inscrever?</div>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <div className="resposta2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                      sit amet blandit leo lobortis eget.
+                    <div className="resposta">
+                      É importante que você que você seja um produtor aqui da nossa cidade, além disso, é importante que você já produza a um tempo considerável. Caso você já esteja filiado a algumas cooperativa favor nos informar.
                    </div>
+                  </AccordionDetails>
+
+                  </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <div className="duvida"> O que posso vender no Resende's Business ?</div>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div className="resposta">
+                      Nosso site é focado em produtores de artezanatos e manufaturados.
+                    </div>
                   </AccordionDetails>
                 </Accordion>
               </div>
