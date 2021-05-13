@@ -4,6 +4,11 @@
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
+    align-items: center;
+}
+.cab{
+    height: 100%;
+    width: 100%;
 }
 .ima{
     width: 100%;
@@ -18,15 +23,17 @@
     width: 200px;
     height: 200px;
 }
-.nome{
-    width: 200px;
-    height: 100px;
-    margin-top: -150px;
-    margin-left: 35px;
+.Perfilnome{
+    margin-left: 3%;
     font-family:'Times New Roman', Times, serif;
     font-size:  1.5rem;
     text-decoration: none;
     font-weight: 70;
     font-style: normal;
-    text-align: center;
+}
+.fotos{
+    display: flex;
+    margin-top: 5%;
+    margin-right: 5%;
+    float: right;
 }

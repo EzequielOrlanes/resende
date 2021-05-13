@@ -32,37 +32,38 @@ function Perfil() {
     return (
     <>
     <Menu/>
-    <div className ="Pagina-Perfil">
-            <div className ="ima">
-                <img className =" per" src="./imagem/red.jpeg"/>
-            </div>
-            <div className="nome">
-                Pedro Emprendimentos
-            </div>
-
-
-            <div className={classes.root}>
-      <GridList cellHeight={180} className={classes.gridList}>
-        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-          <ListSubheader component="div">December</ListSubheader>
-        </GridListTile>
-        {tileData.map((tile) => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              subtitle={<span>by: {tile.author}</span>}
-              actionIcon={
+      <div className ="Pagina-Perfil">
+        <div className ="ima">
+          <img className =" per" src="./imagem/red.jpeg"/>
+          <div className="Perfilnome">Pedro Emprendimentos</div>
+        </div>
+        <div className ="cab">
+        <div className="fotos">
+          <div className={classes.root}>
+            <GridList cellHeight={180} className={classes.gridList}>
+              <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+                <ListSubheader component="div">Fotos</ListSubheader>
+              </GridListTile>
+                {tileData.map((tile) => (
+              <GridListTile key={tile.img}>
+                <img src={tile.img} alt={tile.title} />
+              <GridListTileBar
+                title={tile.title}
+                subtitle={<span>by: {tile.author}</span>}
+                actionIcon={
                 <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
                   <InfoIcon />
                 </IconButton>
               }
-            />
-          </GridListTile>
-        ))}
-      </GridList>
-    </div>
-    </div>
+              />
+            </GridListTile>
+            ))}
+            </GridList>
+          </div>
+        </div>
+        
+        </div>
+      </div>
     </>);
 }
 
