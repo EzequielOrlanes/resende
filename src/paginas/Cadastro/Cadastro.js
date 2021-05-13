@@ -2,13 +2,17 @@ import React from "react";
 import {Form, Col,Button} from "react-bootstrap"
 import "./Cadastro.css"
 import AddButon from "./AddButton"
+import {useHistory} from "react-router-dom"
 
 function Cadastro() {
+    const history = useHistory();
+    function cadastro(){
+        history.push("perfil");
+    }
+    
             return ( 
               
                 <div className ="Pagina-Cadastro">
-                    
-                    
 
                     <div className="Parte1">
                         <Form>
@@ -53,6 +57,11 @@ function Cadastro() {
                             </Form.Control>
                             </Form.Group>
                             <Form.Group controlId="formBasicName">
+                            <Form.Label>Outros</Form.Label>
+                                <Form.Control type="outros" placeholder="Outros" />
+                            </Form.Group>
+
+                            <Form.Group controlId="formBasicName">
                                 <Form.Label>Telefone para contato</Form.Label>
                                 <Form.Control type="name" placeholder="EX: (99)99999-9999" />
                             </Form.Group>
@@ -79,9 +88,9 @@ function Cadastro() {
                             <Form.Group id="formGridCheckbox">
                                 <Form.Check type="checkbox" label="Eu não sou um robô. 🕵🏾" />
                             </Form.Group>
-                            <Button className = "Button-Cadastrar" variant="primary" size="lg" block>
-                                Cadastrar 
-                            </Button>
+                            <div className = "Button-Cadastrar"> 
+                            <Button  variant="primary" size="lg" block onClick={cadastro}>CADASTRAR</Button>   
+                            </div>
                             <p>
 
                             </p>
