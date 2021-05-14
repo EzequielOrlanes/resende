@@ -3,11 +3,13 @@ import "./Home.css";
 import Menu from "../Menu";
 import Carrossel from "./Teste.js";
 import SaibaMais from './SaibaMais';
+import Footer from "../Footer/Footer";
 
 
 function Home() {
     return( 
         <>
+
         <div className = "pag-home">    
             <Menu/>
             <div className = "cidade"/>
@@ -28,7 +30,10 @@ function Home() {
                     
                 </div>
 
-                    <div className= 'box3'><h1 className='h1'>HISTÓRIA DA CIDADE</h1>
+                    <div className= 'box3'>
+                        <div className='h1'>
+                            <p>HISTÓRIA DA CIDADE</p>
+                        </div>
                         <div className='historia'>
                             <p>A história do município de Resende Costa se inicia no ano de 1749, com a construção de uma capela, aonde atualmente se encontra a Igreja Matriz de Nossa Senhora da Penha, tendo em volta oito casas, pertencentes às primeiras famílias do Arraial, como a dos inconfidentes José de Resende Costa pai e filho e a casa do Padre Toledo.
 
@@ -40,14 +45,7 @@ Desde 1923 o município passou a denominar-se simplesmente Resende Costa</p>
                         <img className='fotocidade' src='/imagem/baianas.jpg'></img> 
                     </div>
                     
-                        <div className ="footer"> 
-                            <p> 
-                            Resende Business - Avenida Barbacena.
-                            <p>Número 1219 - Santo Agostinho. </p>
-                            CEP: 30190-924 - Belo Horizonte/MG.
-                            CNPJ: 00.416.968/0001-01.
-                            </p>
-                        </div>
+                        <Footer/>
         </div>
         </>
 

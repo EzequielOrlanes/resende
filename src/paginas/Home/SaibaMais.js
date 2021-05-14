@@ -12,25 +12,25 @@ const images = [
   {
     url: '/imagem/1.jpg',
     title: 'SAIBA MAIS',
-    width: '100%', 
+    width: '50%', 
     pathName: '/segredosdeminas',
-    legend: '#1 Segredos de Minas',
+    legend: ' #1 Segredos de Minas',
   },
 
   {
     url: '/imagem/2.jpg',
     title: 'SAIBA MAIS',
-    width: '100%',
+    width: '50%',
     pathName: '/tremdeminasdecor',
-    legend: '#2 Trem de Minas Decor',
+    legend: ' #2 Trem de Minas Decor',
   },
 
   {
     url: '/imagem/3.jpg',
     title: 'SAIBA MAIS',
-    width: '100%',
+    width: '50%',
     pathName: '/tricodavovo',
-    legend: '#3 Tricô da Vovó',
+    legend: ' #3 Tricô da Vovó',
   },
 
 ];
@@ -166,11 +166,12 @@ export default function ButtonBases() {
             </Typography>
           </span>  
         </ButtonBase>
+        <div>
+        <h2 className='top'>{image.legend}</h2>
+        </div>
         </ListItem>
         </div>
-        <div>
-        <h4>{image.legend}</h4>
-        </div>
+        
         </div>
       ))}
     </div>
