@@ -60,10 +60,10 @@ function QuemSomos() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <div className="duvida1">Não sou de Resende Costa. Posso me inscrever no site?</div>
+                    <div className="duvida">Não sou de Resende Costa. Posso me inscrever no site?</div>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <div className="resposta1">
+                    <div className="resposta">
                       Infelizmente não. A plataforma é destinada apenas a empreendedores que residem em Resende Costa.
                     </div>
                   </AccordionDetails>
@@ -74,10 +74,40 @@ function QuemSomos() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <div className="duvida2">Quais são os requesitos para me inscrever?</div>
+                    <div className="duvida">Quais são os requesitos para me inscrever?</div>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <div className="resposta2">
+                    <div className="resposta">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                      sit amet blandit leo lobortis eget.
+                   </div>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                  >
+                    <div className="duvida">Onde fica a cidade de Resende Costa?</div>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div className="resposta">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                      sit amet blandit leo lobortis eget.
+                   </div>
+                  </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                  >
+                    <div className="duvida">Precisa pagar para se cadastrar no site?</div>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div className="resposta">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
                       sit amet blandit leo lobortis eget.
                    </div>
