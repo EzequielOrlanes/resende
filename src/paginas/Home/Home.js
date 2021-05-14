@@ -3,6 +3,7 @@ import "./Home.css";
 import Menu from "../Menu";
 import Carrossel from "./Teste.js";
 import SaibaMais from './SaibaMais';
+import Footer from "../Footer/Footer";
 
 
 function Home() {
@@ -40,14 +41,15 @@ Desde 1923 o município passou a denominar-se simplesmente Resende Costa</p>
                         <img className='fotocidade' src='/imagem/baianas.jpg'></img> 
                     </div>
                     
-                        <div className ="footer"> 
+                        {/* <div className ="footer"> 
                             <p> 
                             Resende Business - Avenida Barbacena.
                             <p>Número 1219 - Santo Agostinho. </p>
                             CEP: 30190-924 - Belo Horizonte/MG.
                             CNPJ: 00.416.968/0001-01.
                             </p>
-                        </div>
+                        </div> */}
+                        <Footer/>
         </div>
         </>
 

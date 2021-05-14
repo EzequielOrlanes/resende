@@ -39,8 +39,10 @@
 .Saiba-Mais-section{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: black;
+    
+    margin-bottom: 50px;
 }
 .navigation {
     height: 50px;
@@ -55,15 +57,7 @@
     
 }
 
-.footer {
-    border-radius: .5rem;
-    box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
-    background: rgb(211, 220, 226);
-    width: 100%;
-    padding: 15px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.2rem;
-}
+
 
 .cards {
     display: grid;
@@ -77,6 +71,7 @@
     grid-template-rows: max-content 250px 1fr;
     width: 100%;
     height: 100%;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .card img {
@@ -87,7 +82,7 @@
 
 .texto{
     color: black;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size: 1em;
     text-align: center;
 }
@@ -190,6 +185,7 @@
 
 .fotocidade{
     width: 100%;
+    height: 60%;
 }
 
 
@@ -201,26 +197,26 @@
 
     .pag-home{
         width: 100%;
-        margin: 2px;
     }
 
     .cidade{
-    width: 100%;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+        display: none;
+        background-image: url(igrejaresende.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
 
     }
 
     .fotocidade{
     display: flex;
     width: 100%;
-;
+    height: 10%;
     }
 
     .App{
         width: 100%;
-        margin-left: 2px;
+        margin-left: 0px;
     }
 
     .bloco2{
@@ -255,6 +251,17 @@
     font-size: 1rem;
     margin-top: 10px;
     
+}
+
+.Saiba-Mais-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.main-section{
+    display: flex;
 }
 
 
