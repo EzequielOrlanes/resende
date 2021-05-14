@@ -29,7 +29,10 @@ function Home() {
                     
                 </div>
 
-                    <div className= 'box3'><h1 className='h1'>HISTÓRIA DA CIDADE</h1>
+                    <div className= 'box3'>
+                        <div className='h1'>
+                            <p>HISTÓRIA DA CIDADE</p>
+                        </div>
                         <div className='historia'>
                             <p>A história do município de Resende Costa se inicia no ano de 1749, com a construção de uma capela, aonde atualmente se encontra a Igreja Matriz de Nossa Senhora da Penha, tendo em volta oito casas, pertencentes às primeiras famílias do Arraial, como a dos inconfidentes José de Resende Costa pai e filho e a casa do Padre Toledo.
 

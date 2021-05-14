@@ -9,6 +9,7 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import tileData from './tileData';
+import Footer from "../Footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -62,6 +63,7 @@ function Perfil() {
         ))}
       </GridList>
     </div>
+    <Footer/>
     </div>
     </>);
 }

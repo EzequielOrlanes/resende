@@ -8,6 +8,8 @@
 
 .Home{
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .h2{
@@ -54,10 +56,7 @@
 .titulo{
     size: 0.3rem;
     margin-left: 550px;
-    
 }
-
-
 
 .cards {
     display: grid;
@@ -153,15 +152,14 @@
 .bloco2{
     color: #070807;
     text-align: center;
-   width: 100%;
-   background-color: rgb(229, 236, 243); 
-   font-family:'Bebas Neue', cursive;
-   font-size: 4rem;
-   text-decoration: none;
-   font-weight: 70;
-   font-style: normal;
-   justify-content: center;
-
+    width: 100%;
+    background-color: rgb(229, 236, 243); 
+    font-family:'Bebas Neue', cursive;
+    font-size: 4rem;
+    text-decoration: none;
+    font-weight: 70;
+    font-style: normal;
+    justify-content: center;
 }
 
 
@@ -173,7 +171,9 @@
 
 .h1{
     font-family: 'Bebas Neue', cursive;
-    font-size: 3rem;
+    font-size: 60px;
+    margin-left: 30px;
+    margin-top: 20px;
     
 }
 
@@ -181,6 +181,9 @@
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;    
+    margin-left: 45px;
+    margin-bottom: 30px;
+    margin-right: 45px
 }
 
 .fotocidade{
@@ -215,7 +218,7 @@
     }
 
     .App{
-        width: 100%;
+        width: 90%;
         margin-left: 0px;
     }
 

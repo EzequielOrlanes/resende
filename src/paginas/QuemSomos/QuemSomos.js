@@ -5,8 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Footer from "../Footer/Footer";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -94,7 +94,7 @@ function QuemSomos() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <div className="resposta">
-                      Nosso site é focado em produtores de artezanatos e manufaturados.
+                      Nosso site é focado em produtores de artesanatos e manufaturados.
                     </div>
                   </AccordionDetails>
                 </Accordion>
@@ -108,8 +108,7 @@ function QuemSomos() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <div className="resposta">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                      sit amet blandit leo lobortis eget.
+                      Resende Costa é uma cidade mineira que fica 194Km ao sul de Belo Horizonte.
                    </div>
                   </AccordionDetails>
                 </Accordion>
@@ -123,23 +122,14 @@ function QuemSomos() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <div className="resposta">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                      sit amet blandit leo lobortis eget.
+                      Não, o cadastro no site é gratuito.
                    </div>
                   </AccordionDetails>
                 </Accordion>
               </div>
           </div>
         </div>
-
-      <div className ="footer"> 
-        <p> 
-          Resende Business - Avenida Barbacena.<p/>
-          Número 1219 - Santo Agostinho. <p/>
-          CEP: 30190-924 - Belo Horizonte/MG.<p/>
-          CNPJ: 00.416.968/0001-01.<p/>
-        </p>
-      </div>
+      <Footer/>
 
   </div>
 )
