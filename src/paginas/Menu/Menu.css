@@ -47,3 +47,18 @@
     margin-right:auto;
     left:0px;
 }
+
+@media (max-width: 700px){
+
+        .elemento{
+            width: 100%;
+            align-content: center;
+        }
+
+        .e1{
+            width: 75%;
+        } 
+        .e2{
+            width: 25%;
+        }
+}

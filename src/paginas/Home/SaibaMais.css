@@ -1,0 +1,23 @@
+.img-section{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.images-map{
+    display: 'flex'; 
+    flex-direction: 'column'; 
+    justify-content: 'center'; 
+    align-content: 'center'; 
+    text-align: 'center';
+
+}
+
+.top{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+@media (max-width: 600px) {
+    .top{
+        font-size: 1rem;
+    }
+}

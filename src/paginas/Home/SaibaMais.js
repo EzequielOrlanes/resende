@@ -1,25 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
+import {useHistory} from "react-router-dom";
+import { ListItem} from  "@material-ui/core";
+import "./SaibaMais.css";
+
+
 
 const images = [
   {
     url: '/imagem/1.jpg',
     title: 'SAIBA MAIS',
-    width: '40%',
+    width: '50%', 
+    pathName: '/segredosdeminas',
+    legend: ' #1 Segredos de Minas',
   },
 
   {
     url: '/imagem/2.jpg',
     title: 'SAIBA MAIS',
-    width: '40%',
+    width: '50%',
+    pathName: '/tremdeminasdecor',
+    legend: ' #2 Trem de Minas Decor',
   },
 
   {
     url: '/imagem/3.jpg',
     title: 'SAIBA MAIS',
-    width: '40%',
+    width: '50%',
+    pathName: '/tricodavovo',
+    legend: ' #3 Tricô da Vovó',
   },
 
 ];
@@ -29,11 +40,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     minWidth: 300,
-    width: '100%',
-    margin: '10px',
-    marginTop: '15px',
+    width: '100vw',
+    // margin: '10px',
+    // marginTop: '15px',
     flexDirection: 'column',
-    alignItems: 'center',
+    // alignItems: 'flex-end',
+    // marginLeft: '500px',
+
    
   },
   image: {
@@ -75,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     bottom: 0,
     backgroundSize: 'cover',
-    backgroundPosition: 'center 40%',
+    backgroundPosition: 'center 50%',
   },
   imageBackdrop: {
     position: 'absolute',
@@ -104,10 +117,22 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonBases() {
   const classes = useStyles();
+  const history = useHistory();
+  const [currentPage, setCurrentPage] = useState("/home");
+  function handleClick(pathName){
+    history.push(pathName);
+    setCurrentPage(pathName)
+}
 
   return (
     <div className={classes.root}>
       {images.map((image) => (
+        <div className='images-map'>
+        <div>
+         <ListItem
+         button
+         selected = {currentPage === image.pathName}
+         onClick={()=> {handleClick(image.pathName)}}>
         <ButtonBase
           focusRipple
           key={image.title}
@@ -115,8 +140,11 @@ export default function ButtonBases() {
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: image.width,
+            alignContent: 'content-position',
+            
           }}
         >
+       
           <span
             className={classes.imageSrc}
             style={{
@@ -125,6 +153,7 @@ export default function ButtonBases() {
           />
           <span className={classes.imageBackdrop} />
           <span className={classes.imageButton}>
+            
             <Typography
               component="span"
               variant="subtitle1"
@@ -133,9 +162,17 @@ export default function ButtonBases() {
             >
               {image.title}
               <span className={classes.imageMarked} />
+              
             </Typography>
-          </span>
+          </span>  
         </ButtonBase>
+        <div>
+        <h2 className='top'>{image.legend}</h2>
+        </div>
+        </ListItem>
+        </div>
+        
+        </div>
       ))}
     </div>
   );
