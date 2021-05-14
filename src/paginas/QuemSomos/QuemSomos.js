@@ -78,8 +78,7 @@ function QuemSomos() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <div className="resposta">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                      sit amet blandit leo lobortis eget.
+                     É preciso residir em Resende Costa, ter um empreendimento na cidade. 
                    </div>
                   </AccordionDetails>
 
