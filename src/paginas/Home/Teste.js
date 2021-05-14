@@ -14,7 +14,7 @@ const breakPoints = [
 function App() {
   return (
     <>
-      <div className = "h7"><p>Conheça quem torna Resende Costa a cidade do Artesanato</p></div>
+      <div className = "h7"><p className = "textoh7">Conheça quem torna Resende Costa a cidade do Artesanato</p></div>
       <div className="App">
            
         <Carousel breakPoints={breakPoints}>
