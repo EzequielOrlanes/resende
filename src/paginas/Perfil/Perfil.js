@@ -34,7 +34,7 @@ function Perfil() {
     <Menu/>
       <div className ="Pagina-Perfil">
         <div className ="ima">
-          <img className =" per" src="./imagem/red.jpeg"/>
+          <img className =" per" src="./imagem/TremDeMinas.jpeg"/>
           <div className="Perfilnome">Pedro Emprendimentos</div>
         </div>
         <div className ="cab">
