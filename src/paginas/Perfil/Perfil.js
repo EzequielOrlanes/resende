@@ -10,6 +10,11 @@ import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import tileData from './tileData';
 import Footer from "../Footer/Footer";
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -27,8 +32,28 @@ const useStyles = makeStyles((theme) => ({
       color: 'rgba(255, 255, 255, 0.54)',
     },
   }));
+  const usestyles = makeStyles({
+    root: {
+      minWidth: 500,
+    },
+    bullet: {
+      display: 'inline-block',
+      margin: '0 2px',
+      transform: 'scale(0.8)',
+    },
+    title: {
+      fontSize: 14,
+    },
+    pos: {
+      marginBottom: 12,
+    },
+  });
+  
+
 
 function Perfil() {
+  const Classes = usestyles();
+    const bull = <span className={Classes.bullet}>•</span>
     const classes = useStyles()
     return (
     <>
@@ -61,6 +86,39 @@ function Perfil() {
         ))}
       </GridList>
 </div>
+    </div>
+    <div className="Perfil-informaçoes">
+    <Card className={Classes.root}>
+      <CardContent>
+        <Typography className={Classes.title} color="textSecondary" gutterBottom>
+          Area:
+        </Typography>
+        <Typography variant="body2" component="p">
+        Artesanato
+        </Typography>
+        <p></p>
+        <Typography className={Classes.pos} color="textSecondary">
+          Emaill:
+        </Typography>
+        <Typography variant="body2" component="p">
+          tremdeminas@gmail.com.br
+        </Typography>
+        <p></p>
+        <Typography className={Classes.pos} color="textSecondary">
+          Telefone:
+        </Typography>
+        <Typography variant="body2" component="p">
+          (99) 99999-9999
+        </Typography>
+        <p></p>
+        <Typography className={Classes.pos} color="textSecondary">
+          Endereço:
+        </Typography>
+        <Typography variant="body2" component="p">
+          Av.Primeiro
+        </Typography>
+      </CardContent>
+    </Card>
     </div>
     </div>
     <Footer/>

@@ -24,8 +24,9 @@
     height: 200px;
 }
 .Perfilnome{
-    margin-left: 3%;
-    font-family:'Times New Roman', Times, serif;
+    margin-top: 2%;
+    margin-left: 4%;
+    font-family: 'Bebas Neue', cursive;
     font-size:  1.5rem;
     text-decoration: none;
     font-weight: 70;
@@ -36,4 +37,9 @@
     margin-top: 5%;
     margin-right: 5%;
     float: right;
+}
+.Perfil-informaçoes{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 5%;
 }
