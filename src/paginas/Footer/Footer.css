@@ -19,10 +19,11 @@
 .icones{
     display: flex;
     align-items: center;
+    margin-left: 450px;
     
 }
 
-@media (max-width: 985px)  {
+@media (max-width: 1000px)  {
     .footer{
         padding: 30px 24px;
         display: grid;
@@ -42,7 +43,7 @@
         text-rendering: optimizelegibility
     }
 
-    .texto{
+    .infos{
         margin: 0px;
         color: rgb(20, 20, 20);
         font-weight: 500;
