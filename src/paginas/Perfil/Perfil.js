@@ -49,9 +49,24 @@ const useStyles = makeStyles((theme) => ({
     },
   });
   
+const UseStyles = makeStyles({
+  root: {
+    minWidth: 1000,
+    alignItems:'center',
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 20,
+  },
+});
 
 
 function Perfil() {
+  const CLASSES = UseStyles();
   const Classes = usestyles();
     const bull = <span className={Classes.bullet}>•</span>
     const classes = useStyles()
@@ -120,6 +135,21 @@ function Perfil() {
       </CardContent>
     </Card>
     </div>
+    </div>
+    <div className="Perfil-quemsomos">
+    <Card className={CLASSES.root} variant="outlined">
+      <CardContent>
+        <Typography className={CLASSES.title} color="textSecondary" gutterBottom>
+          QUEM SOMOS
+        </Typography>
+        <Typography variant="body2" component="p">
+          SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+          SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.
+          <br />
+        </Typography>
+      </CardContent>
+    </Card>
+
     </div>
     <Footer/>
     </div>
