@@ -17,10 +17,10 @@
 }
 .per{
     border-radius: 50%;
-    margin-top: 5%;
+    margin-top: 6%;
     margin-left: 3%;
-    width: 20%;
-    height: 100%;
+    width: 15%;
+    height: 90%;
 }
 .Perfilnome{
     margin-top: 2%;
@@ -49,13 +49,43 @@
     margin-bottom: 5%;
 }
 
-@media (max-width: 700px){
-    .Pagina-Perfil, .cab, .fotos, .ima, .Perfil-informaçoes, .Perfil-quemsomos, .Perfilnome{
+@media (max-width: 450px){
+    .cab{
+        height: 100%;
         width: 100%;
+        flex-direction: column;
     }
-
-    .per{
+    .ima{
         width: 100%;
-
+        height: 15%; 
+        background: fixed;
+        background-image:url(baianas.jpg);
+    }
+    .per{
+        border-radius: 50%;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 25%;
+        height: 80%;
+    }
+    .Perfilnome{
+        margin-top: 2%;
+        margin-left: 6%;
+        font-family: 'Bebas Neue', cursive;
+        font-size:  1rem;
+        text-decoration: none;
+        font-weight: 70;
+        font-style: normal;
+    }
+    .fotos{
+        display: flex;
+        margin-top: 100%;
+        margin-right: 5%;
+        float: right;
+    }
+    .Perfil-informaçoes{
+        display: flex;
+        margin-top: 20%;
+        margin-left: 5%;
     }
 }

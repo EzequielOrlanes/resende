@@ -11,7 +11,6 @@ import InfoIcon from '@material-ui/icons/Info';
 import tileData from './tileData';
 import Footer from "../Footer/Footer";
 import Card from '@material-ui/core/Card';
-
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
@@ -33,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   }));
   const usestyles = makeStyles({
     root: {
-      minWidth: 500,
+      minWidth: 300,
     },
     bullet: {
       display: 'inline-block',
