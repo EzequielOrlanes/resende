@@ -40,13 +40,7 @@ function QuemSomos() {
         </div>
 
       <div className ="Pagina2"> 
-        <div className ="Fto"> 
-          <img src = "./imagem/arte.jpg"/>
-        </div>
-
-        <div className = "Fto2">
-          <img src = "./imagem/baianas.jpg"/>
-        </div>
+        <img className = "foto" src = "./imagem/artesanato.jpg"/>
       </div> 
 
       <div className ="Pagina3"> 
