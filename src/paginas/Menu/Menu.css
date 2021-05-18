@@ -21,8 +21,9 @@
 .userContainer{
     background:rgba(238, 238, 238, 0);
     height: 10vh;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
 }
 
 
@@ -37,8 +38,9 @@
     background:rgba(238, 238, 238, 0);
     height: 10vh;
     position: absolute;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
 
 }
 .elemento{
@@ -60,5 +62,9 @@
         } 
         .e2{
             width: 25%;
+        }
+
+        .Drawer, .barra, .container{
+            width: 100%;
         }
 }

@@ -49,3 +49,14 @@
     margin-right: 5%;
     margin-bottom: 5%;
 }
+
+@media (max-width: 700px){
+    .Pagina-Perfil, .cab, .fotos, .ima, .Perfil-informaçoes, .Perfil-quemsomos, .Perfilnome{
+        width: 100%;
+    }
+
+    .per{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
