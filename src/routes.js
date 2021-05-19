@@ -42,7 +42,7 @@ function UserMenu(){
     return (
        
            <Switch>           
-                <PrivateRoute path="/home" component={Home}/>
+                <Route path="/home" component={Home}/>
                 <Route path="/Empreendimentos" component={Empreendimentos}/>
                 <Route path="/Empresas" component={Empresas}/>
                 <Route path="/Perfil" component={Perfil}/>
