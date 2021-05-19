@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
 .Pagina-Perfil{
     display: flex;
     height: 100%;
@@ -6,8 +7,10 @@
     flex-wrap: wrap;
 }
 .cab{
-    height: 100%;
+    display: flex;
+    max-height: 100%;
     width: 100%;
+    flex-wrap: wrap;
 }
 .ima{
     width: 100%;
@@ -79,7 +82,6 @@
     }
     .fotos{
         display: flex;
-        margin-top: 100%;
         margin-right: 5%;
         float: right;
     }
