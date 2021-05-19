@@ -13,7 +13,7 @@ function Home() {
         <div className = "pag-home">    
             <Menu/>
             <div className = "cidade"/>
-                <div className='main-section'>
+                {/* <div className='main-section'> */}
                 <div className = "Home">
                     <Carrossel/>
                 </div>
@@ -26,7 +26,7 @@ function Home() {
                         <SaibaMais/>
                     </div>
 
-                </div> 
+                {/* </div>  */}
                     
                 </div>
 
