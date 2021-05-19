@@ -10,6 +10,20 @@ import QuemSomos from "./paginas/QuemSomos";
 import SegredosDeMinas from "./paginas/SegredosDeMinas";
 import TremDeMinasDecor from "./paginas/TremDeMinasDecor";
 import TricoDaVovo from "./paginas/TricoDaVovo";
+import {isAuthenticated} from "./services/auth"
+
+const PrivateRoute = ({ component: Component, ...rest }) => (
+    <Route
+      {...rest}
+      render={props =>
+        isAuthenticated() ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to={{ pathname: "/login", state: { from: props.location } }} />
+        )
+      }
+    />
+);
 
 
 function Routes(){
@@ -28,7 +42,7 @@ function UserMenu(){
     return (
        
            <Switch>           
-                <Route path="/home" component={Home}/>
+                <PrivateRoute path="/home" component={Home}/>
                 <Route path="/Empreendimentos" component={Empreendimentos}/>
                 <Route path="/Empresas" component={Empresas}/>
                 <Route path="/Perfil" component={Perfil}/>
