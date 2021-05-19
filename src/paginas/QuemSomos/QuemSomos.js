@@ -139,6 +139,11 @@ function QuemSomos() {
             </Accordion>
           </div>
         </div>
+        <div className="Caixa3">
+          <div className="texto-caixa3">
+          Ainda tem alguma dúvida? Entre em contato com a gente!          
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
