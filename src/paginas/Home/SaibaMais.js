@@ -40,13 +40,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     minWidth: 300,
-    width: '100vw',
-    // margin: '10px',
-    // marginTop: '15px',
+    width: '100%',
     flexDirection: 'column',
-    // alignItems: 'flex-end',
-    // marginLeft: '500px',
-
+    //justifyContent: 'center', 
+    //alignContent: 'center', 
+    //textAlign: 'center',
+    marginLeft: 'auto',
    
   },
   image: {
@@ -167,9 +166,9 @@ export default function ButtonBases() {
           </span>  
         </ButtonBase>
         <div>
-        <h2 className='top'>{image.legend}</h2>
         </div>
-        </ListItem>
+        </ListItem> 
+            <h2 className='top'>{image.legend}</h2>
         </div>
         
         </div>

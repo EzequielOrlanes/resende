@@ -1,234 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-.Pagina-QuemSomos{
-    display: flex;
-    width:100%;
-    max-height: 60%;
-    flex-wrap: wrap; /*Deixa um bloco abaixo do outro*/
+.Pagina-QuemSomos {
+  flex-wrap: wrap;
 }
 
-.Pagina1{
-	background:white;
-    width: 100%;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Titulo-QuemSomos {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+  text-decoration: none;
+  font-weight: 70;
+  font-style: normal;
+  justify-content: center;
+  background-color: rgb(229, 236, 243);
+  margin-top: 3%;
+  text-align: center;
 }
 
-.Caixa1{
-    display: flex;
-    margin: 5px;
-    height: 300px;
-    width: 1000px;
-    flex-wrap: wrap;
+.Textodeapresentação {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 4%;
 }
 
-.content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.Pagina2{
-    display: flex;
-    width: 100%;
-    height: 450px;
-    background-color:black;
-}
-
-.Pagina3 {
-	background:white;
-    width: 100%;
-    height: 70vmin;
-    display: flex;
-    justify-content: center;
-}
-
-.header-quemsomos{
- width: 100%;
- height: 40px;
-}
-
-.Titulo-QuemSomos{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
-    text-rendering: optimizelegibility;
-}
-
-.Textodeapresentação{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    width:1000px;
-    height:auto;
-    margin:10px;
-    margin-top:40px;
-    text-align: justify; 
-}
-
-.Fto{
+.Pagina2 {
   display: flex;
-  height: 100%;
+  width: 100%;
+}
+.foto {
   width: 100%;
 }
 
-.Fto2{
-    display: flex;
-    height: 100%;
-    width: 145%;
+.Titulo-duvidas {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+  text-decoration: none;
+  font-weight: 70;
+  font-style: normal;
+  justify-content: center;
+  background-color: rgb(229, 236, 243);
+  margin-top: 3%;
+  text-align: center;
 }
 
-.Caixa2{
-    display: flex;
-    margin: 5px;
-    height: 200px;
-    width: 1000px;
-    flex-wrap: wrap;
-    margin-top: 60px;
+.acordeao {
+  margin-top: 45px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 3%;
 }
 
-.header-duvidas{
-    width: 100%;
-    height: 40px;
+.duvida {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
-   
-.Titulo-duvidas{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
-    align-items: center;
-    align-items: center;
-    text-rendering: optimizelegibility;
+.resposta {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
 }
-
 .Caixa3{
-    font-family:'Fredoka One', cursive;
+  align-items: center;
+  justify-content: center;
+}
+.texto-caixa3{
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 60;
+  font-style: normal;
+  text-align: center;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 4%;
 }
 
-.Caixa4{
-    font-family:'Fredoka One', cursive; 
-}
-.acordeao{
+
+@media (max-width: 450px) {
+  .Pagina-QuemSomos {
+    flex-wrap: wrap;
+  }
+  .acordeao {
     margin-top: 45px;
-}
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
 
-.duvida{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+  .duvida {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
     font-weight: bold;
-}
-.resposta{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-}
+  }
+  .resposta {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
 
-
-
-@media (max-width: 450px){
-
-    .Pagina1{
-        background:white;
-        width: 100%;
-        height: 700px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .Caixa1{
-        display: flex;
-        margin: 5px;
-        height: 600px;
-        width: 300px;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Textodeapresentação{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    width:1000px;
-    height:auto;
-    margin:10px;
-    margin-top:40px;
-    text-align: justify; 
-    }
-
-    .Pagina2{
-        display: flex;
-        width: 100%;
-        height: 100px;
-        background-color:black;
-    }
-    .Caixa2{
-        display: flex;
-        height: 200px;
-        width: 300px;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .Pagina3 {
-	    background:white;
-        width: 100%;
-        height: 700px;
-        display: flex;
-    }
-
-    .Titulo-duvidas{
-        font-family: 'Bebas Neue', cursive;
-        font-size: 60px;
-        align-items: center;
-        text-rendering: optimizelegibility;
-        margin: 0px;
-    }
-    .Fto{
-        display: flex;
-        height: 100%;
-        width: 33vw;
-        height: 20vh;
-      }
-      .Fto2{
-        display: flex;
-        height: 100%;
-        width: 30%;
-    }
-      .header-duvidas{
-        width: 100%;
-        height: 150px;
-    }
-    .acordeao{
-        margin-top: 0px;
-        position: relative;
-    }
-    
-    .duvida{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 17px;
-        font-weight: bold;
-    }
-    .resposta{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .Pagina-QuemSomos {
-        width: 100%;
-    }
-
-    
-
-
-
-
+  .Titulo-duvidas {
+    font-family: "Bebas Neue", cursive;
+    font-size: 4rem;
+    text-decoration: none;
+    font-weight: 70;
+    font-style: normal;
+    justify-content: center;
+    background-color: rgb(229, 236, 243);
+    margin-top: 3%;
+    text-align: center;
+  }
 }
