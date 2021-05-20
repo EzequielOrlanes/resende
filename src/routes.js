@@ -48,7 +48,7 @@ function UserMenu(){
                 <Route path="/Perfil" component={Perfil}/>
                 <Route path="/Cadastro" component={Cadastro}/>
                 <Route path="/QuemSomos" component={QuemSomos}/>
-                <Route path="/SegredosDeMinas" component={SegredosDeMinas}/>
+                <PrivateRoute path="/SegredosDeMinas" component={SegredosDeMinas}/>
                 <Route path="/TremDeMinasDecor" component={TremDeMinasDecor}/>
                 <Route path="/TricoDaVovo" component={TricoDaVovo}/>
                 <Route component={() => <Redirect to="/home"></Redirect>}/>
