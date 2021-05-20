@@ -4,7 +4,7 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import api from "../../services/api";
-import {login} from "../../services/auth";
+import { login } from "../../services/auth";
 import AddButon from "./AddButton";
 
 function Login() {
