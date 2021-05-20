@@ -4,22 +4,8 @@ import Menu from "../Menu";
 import Carrossel from "./Teste.js";
 import SaibaMais from "./SaibaMais";
 import Footer from "../Footer/Footer";
-import api from "../../services/api";
 
 function Home() {
-  async function getPerfil() {
-    try {
-      const response = await api.get("/perfil");
-      console.log(response);
-    } catch (error) {
-      console.warn(error);
-      alert("Algo deu errado");
-    }
-  }
-
-  useEffect(() => {
-    getPerfil();
-  }, []);
 
   return (
     <>

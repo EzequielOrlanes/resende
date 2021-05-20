@@ -35,8 +35,7 @@ function Cadastro() {
         desc,
         cnpj,
       });
-      console.log("🚀 ~ file: Cadastro.js ~ line 38 ~ handlecadastro ~ response", response);
-      history.push("/home");
+      history.push("/login");
     } catch (error) {
       if (error.response.status === 403) {
         alert("Preencha Corretamente Os Campos!");
