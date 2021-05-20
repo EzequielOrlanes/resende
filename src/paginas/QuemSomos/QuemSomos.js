@@ -29,7 +29,7 @@ function QuemSomos() {
             <h1 className="Titulo-QuemSomos"> Quem Somos</h1>{" "}
           </div>
           <p className="Textodeapresentação">
-            O Resende's Business é uma plataforma com o objetivo de reunir e dar
+            O Resende's Business é uma plataforma com o objetivo de reunir e dar 
             visibilidade aos microeemprendedores da cidade de Resende Costa
             (MG), que começaram a surgir principalmente após a pandemia da
             Covid-19, a fim de impulsionar o comércio da cidade local. O sistema

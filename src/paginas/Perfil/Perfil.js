@@ -8,6 +8,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Fotos from "./Fotos"
 import SobreNos from "./SobreNos"
+import CardActions from '@material-ui/core/CardActions';
+import Button from '@material-ui/core/Button';
+
+
 
   const usestyles = makeStyles({
     root: {
@@ -63,14 +67,14 @@ function Perfil() {
     <Card className={Classes.root}>
       <CardContent>
         <Typography className={Classes.title} color="textSecondary" gutterBottom>
-          Area:
+          Área:
         </Typography>
         <Typography variant="body2" component="p">
-        Artesanato
+        Artesanato.
         </Typography>
         <p></p>
         <Typography className={Classes.pos} color="textSecondary">
-          Emaill:
+          E-mail:
         </Typography>
         <Typography variant="body2" component="p">
           tremdeminas@gmail.com.br
@@ -80,7 +84,7 @@ function Perfil() {
           Telefone:
         </Typography>
         <Typography variant="body2" component="p">
-          (99) 99999-9999
+          (99) 99999-9999.
         </Typography>
         <p></p>
         <Typography className={Classes.pos} color="textSecondary">
@@ -90,6 +94,9 @@ function Perfil() {
           Av.Primeiro
         </Typography>
       </CardContent>
+      <Typography variant="body2" component="p">
+        <Button color="red" size="small">Alterar</Button>
+        </Typography>
     </Card>
     </div>
         <div className="fotos">
