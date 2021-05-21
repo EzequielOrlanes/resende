@@ -57,7 +57,6 @@ export default function SimpleCard() {
           
         </Typography>
         <Typography variant="body2" component="p">
-        <Button color="red" size="small">Alterar</Button>
         </Typography>
       </CardContent>
     </Card>

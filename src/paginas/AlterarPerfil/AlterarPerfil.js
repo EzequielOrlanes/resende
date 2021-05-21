@@ -19,7 +19,7 @@ function AlterarPerfil() {
   const [cnpj, setCnpj] = useState();
   const history = useHistory();
 
-  async function handlecadastro(e) {
+  async function handlealterarperfil(e) {
     e.preventDefault();
     try {
       const response = await api.post("/alterarperfil", {
@@ -126,7 +126,7 @@ function AlterarPerfil() {
             <Form.Check type="checkbox" label="Eu não sou um robô. 🕵🏾" />
           </Form.Group>
           <div className="Button-Cadastrar">
-            <Button variant="primary" size="lg" onClick={handlecadastro}>
+            <Button variant="primary" size="lg" onClick={handlealterarperfil}>
               Fazer alterações
             </Button>
           </div>
