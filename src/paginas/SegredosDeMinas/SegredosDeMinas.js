@@ -10,13 +10,14 @@ import Segredos_Fotos from "./Segredos_Fotos"
 import Segredos_SobreNos from "./Segredos_SobreNos"
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
+import { Link } from "react-router-dom";
 
 
 
   const usestyles = makeStyles({
     root: {
       display:'flex',
-      minWidth: 300,
+      minWidth: '60%',
 
     },
     bullet: {
@@ -59,32 +60,32 @@ function SegredosDeMinas() {
       <Menu />
       <div className="Pagina-Segredos">
         <div className="Segredos-ima">
-          <img className="Segredos-per" src="./imagem/Porcelanas.png" />
-          <div className="Segredosnome">Segredos de Minas</div>
+          <img className="Segredos-per" src="./imagem/porcelanas.png" />
+          <div className="Segredosnome">Segredos De Minas</div>
         </div>
         <div className ="Segredos-cab">
     <div className="Segredos-informaçoes">
     <Card className={Classes.root}>
       <CardContent>
         <Typography className={Classes.title} color="textSecondary" gutterBottom>
-          Area:
+          Área:
         </Typography>
         <Typography variant="body2" component="p">
-        Artesanato
+        Artesanato.
         </Typography>
         <p></p>
         <Typography className={Classes.pos} color="textSecondary">
-          Emaill:
+          E-mail:
         </Typography>
         <Typography variant="body2" component="p">
-          tremdeminas@gmail.com.br
+          segredosdeminas@gmail.com.br
         </Typography>
         <p></p>
         <Typography className={Classes.pos} color="textSecondary">
           Telefone:
         </Typography>
         <Typography variant="body2" component="p">
-          (99) 99999-9999
+          (99) 99999-9999.
         </Typography>
         <p></p>
         <Typography className={Classes.pos} color="textSecondary">
@@ -95,15 +96,17 @@ function SegredosDeMinas() {
         </Typography>
       </CardContent>
       <Typography variant="body2" component="p">
-        <Button color="red" size="small">Alterar</Button>
+        <Button color="red" size="small">
+        <Link to="alterarperfil">Alterar</Link>
+        </Button>
         </Typography>
     </Card>
     </div>
-        <div className="Segredos-fotos">
+        <div className="fotos">
           <Segredos_Fotos/>
     </div>
     </div>
-    <div className="Segredos-quemsomos">
+    <div className="Perfil-quemsomos">
     <Segredos_SobreNos/>
     </div>
     <Footer/>
