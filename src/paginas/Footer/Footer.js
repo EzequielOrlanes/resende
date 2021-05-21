@@ -7,7 +7,7 @@ function Footer (){
     return (
         <div className ="footer">
             
-            <img src="/imagem/Loguinho.png"/>
+            <img className='logo' src="/imagem/Loguinho.png"/>
                     <div className='infos'>
                             
                             Resende Business - Avenida Barbacena.
@@ -18,6 +18,7 @@ function Footer (){
                             </div>
 
                                 <div className="icones">
+                                    <h3 className='redes'>SIGA-NOS NAS REDES SOCIAIS<p/></h3>
                                     <IconButton arial-label="Instagram">
                                         <AiFillInstagram/>
                                     </IconButton>

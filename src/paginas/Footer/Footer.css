@@ -8,6 +8,22 @@
         font-size: 1.2rem;
 }
 
+.redes{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    align-items: center;
+    width: 15vw;
+    height: auto;
+}
+
 
 .infos{
     display: flex-start;
@@ -43,13 +59,26 @@
         text-rendering: optimizelegibility
     }
 
+    .logo{
+        display: flex;
+        align-content: center;
+        justify-content: left;
+        align-items: center;
+        width: 15vw;
+    }
+
+    .redes{
+        font-size: 1.1rem;
+    }
+
     .infos{
         margin: 0px;
         color: rgb(20, 20, 20);
         font-weight: 500;
         letter-spacing: -0.02em;
         font-size: 1rem;
-        line-height: 1.5;;
+        line-height: 1.5;
+
     }
 
 }

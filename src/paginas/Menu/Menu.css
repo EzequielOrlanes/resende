@@ -1,5 +1,6 @@
 .Drawer{
     width: 260px;
+    background-color: rgb(229, 236, 243); ;
 }
 
 .listText{
@@ -10,7 +11,7 @@
 .userName{
     font-family: 'Black Han Sans', arial, sans-serif;
     text-align: center;
-    color: #fffdfd;
+    color: #fdffff;
     margin-left:auto;
     margin-right:auto;
     font-size: 2rem;
@@ -28,7 +29,7 @@
 
 
 .barra{
-    background:whitesmoke;
+    background-color:rgb(229, 236, 243); ;
     width: 100%;
     height: 100px;
 
