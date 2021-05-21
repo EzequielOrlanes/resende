@@ -19,25 +19,25 @@ function Footer (){
 
                                 <div className="icones">
                                     <h3 className='redes'>SIGA-NOS NAS REDES SOCIAIS<p/></h3>
-                                    <IconButton arial-label="Instagram">
+                                    <IconButton arial-label="Instagram" href="https://www.instagram.com/cpe.jr/"target="_blank">
                                         <AiFillInstagram/>
                                     </IconButton>
 
-                                    <IconButton arial-label="Facebook">
+                                    <IconButton arial-label="Facebook" href="https://www.facebook.com/cpejr"target="_blank">
                                         <AiFillFacebook/>
                                     </IconButton>
 
                                     
-                                    <IconButton arial-label="Linkedin">
+                                    <IconButton arial-label="Linkedin" href="https://www.linkedin.com/"target="_blank">
                                         <AiFillLinkedin/>
                                     </IconButton>
 
                                     
-                                    <IconButton arial-label="Youtude">
+                                    <IconButton arial-label="Youtube" href="https://www.youtube.com/channel/UCd8K0h8kjQK438PHuY2sSdQ"target="_blank">
                                         <AiFillYoutube/>
                                     </IconButton>
 
-                                    <IconButton arial-label="Twitter">
+                                    <IconButton arial-label="Twitter" href="https://twitter.com/cpejr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank">
                                         <AiFillTwitterSquare/>
                                     </IconButton>
 
