@@ -6,19 +6,21 @@ import {AiFillInstagram, AiFillFacebook, AiFillLinkedin, AiFillYoutube, AiFillTw
 function Footer (){
     return (
         <div className ="footer">
-            
+            <div className='global'>
             <img className='logo' src="/imagem/Loguinho.png"/>
                     <div className='infos'>
                             
                             Resende Business - Avenida Barbacena.
-                            Número 1219 - Santo Agostinho.<p/> 
+                            Número 1219 - Santo Agostinho.
                             CEP: 30190-924 - Belo Horizonte/MG.
                             CNPJ: 00.416.968/0001-01.
                             
                             </div>
 
+                        <div className='alinha'>
+                            <h3 className='redes'>SIGA-NOS NAS REDES SOCIAIS</h3>
                                 <div className="icones">
-                                    <h3 className='redes'>SIGA-NOS NAS REDES SOCIAIS<p/></h3>
+                                   
                                     <IconButton arial-label="Instagram" href="https://www.instagram.com/cpe.jr/"target="_blank">
                                         <AiFillInstagram/>
                                     </IconButton>
@@ -42,7 +44,9 @@ function Footer (){
                                     </IconButton>
 
                                 </div>
-                            
+                                </div>
+                                </div>
+                                <div className='copyright'>Copyright © 2021 Desenvolvido por CPEJr</div>
                         </div>
     );
 }

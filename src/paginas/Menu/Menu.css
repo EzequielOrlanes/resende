@@ -1,10 +1,9 @@
 .Drawer{
     width: 260px;
-    background-color: rgb(229, 236, 243); ;
 }
 
 .listText{
-    color: #292525;
+    color: #7ca494;
     margin-left: 15px;
 }
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
