@@ -46,7 +46,8 @@ function Footer (){
                                 </div>
                                 </div>
                                 </div>
-                                <div className='copyright'>Copyright © 2021 Desenvolvido por CPEJr</div>
+                                <div className='textaling'>
+                                <div className='copyright'>Copyright © 2021 Desenvolvido por CPEJr</div></div>
                         </div>
     );
 }

@@ -32,6 +32,7 @@
 .main-section{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .content {
@@ -93,8 +94,8 @@
   align-items: center;
   justify-content: center;
   height: 60vh;
-  width: 200vh;
-  margin-left: 50px;
+  width: 100%;
+  
   background-color: white;
   margin-bottom: 20px;
 }
@@ -239,9 +240,11 @@
 
     .h7{
         font-size: 2.7rem;
+        width: 100%;
     }
     .textoh7{
         margin: 15px;
+        width: 100%;
     }
     
     .images{

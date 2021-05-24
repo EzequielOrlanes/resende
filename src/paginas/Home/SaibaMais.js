@@ -39,8 +39,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    minWidth: 300,
-    width: '100%',
+    minWidth: 250,
+    width: '70%',
     flexDirection: 'column',
     //justifyContent: 'center', 
     //alignContent: 'center', 
@@ -126,13 +126,14 @@ export default function ButtonBases() {
   return (
     <div className={classes.root}>
       {images.map((image) => (
+        
         <div className='images-map'>
-        <div>
-         <ListItem
-         button
-         selected = {currentPage === image.pathName}
-         onClick={()=> {handleClick(image.pathName)}}>
-        <ButtonBase
+          <div>
+          <ListItem
+          button
+          selected = {currentPage === image.pathName}
+          onClick={()=> {handleClick(image.pathName)}}>
+          <ButtonBase
           focusRipple
           key={image.title}
           className={classes.image}
@@ -142,7 +143,7 @@ export default function ButtonBases() {
             alignContent: 'content-position',
             
           }}
-        >
+          >
        
           <span
             className={classes.imageSrc}
@@ -164,7 +165,7 @@ export default function ButtonBases() {
               
             </Typography>
           </span>  
-        </ButtonBase>
+          </ButtonBase>
         <div>
         </div>
         </ListItem> 
