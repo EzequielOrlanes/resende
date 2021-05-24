@@ -45,9 +45,9 @@ function Empreendimentos() {
                   <div className="titulo-empreen">Segredos de Minas</div>
                   <div className="descricao-empreen">
                     <p></p>
-                    Cada empreendimento pode colocar a descrição do seu negócio
-                    para que os clientes se interessem em conhecer mais a sua
-                    página.
+                    Quer deixar sua casa ainda mais bonita? Nos dedicamos a criar
+                     itens de decoração criativos e que valorizarão ainda mais o ambiente.
+
                   </div>
                 </CardContent>
               </CardActionArea>
@@ -69,9 +69,8 @@ function Empreendimentos() {
                   <div className="titulo-empreen">Tricô da Vovó</div>
                   <div className="descricao-empreen">
                     <p></p>
-                    Cada empreendimento pode colocar a descrição do seu negócio
-                    para que os clientes se interessem em conhecer mais a sua
-                    página.
+                    Somos um empreendimento familiar que produz roupas e enfeites
+                    de tricô. Cada peça feita manualmente e exclusiva para você!
                   </div>
                 </CardContent>
               </CardActionArea>
@@ -93,9 +92,8 @@ function Empreendimentos() {
                   <div className="titulo-empreen">Trem de Minas Decor</div>
                   <div className="descricao-empreen">
                     <p></p>
-                    Cada empreendimento pode colocar a descrição do seu negócio
-                    para que os clientes se interessem em conhecer mais a sua
-                    página.
+                    Desde 2015 produzindo almofadas, tapetes, colchas, toalhas e 
+                    outros produtos para decorar a sua casa. Venha conhecer nosso negócio!
                   </div>
                 </CardContent>
               </CardActionArea>
