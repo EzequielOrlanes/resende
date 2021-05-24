@@ -19,14 +19,9 @@
 @media (max-width: 600px) {
     .top{
         font-size: 1rem;
-        width: 100%;
     }
 
-    .images-map{
-        width: 100%;
-    }
-
-    .img-section{
-        max-width: min-content;
+    .images-map, .img-section{
+        width: 90%;
     }
 }
