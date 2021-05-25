@@ -20,4 +20,8 @@
     .top{
         font-size: 1rem;
     }
+
+    .images-map, .img-section{
+        width: 90%;
+    }
 }

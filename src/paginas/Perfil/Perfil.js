@@ -10,13 +10,14 @@ import Fotos from "./Fotos"
 import SobreNos from "./SobreNos"
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
+import { Link } from "react-router-dom";
 
 
 
   const usestyles = makeStyles({
     root: {
       display:'flex',
-      minWidth: 300,
+      minWidth: '60%',
 
     },
     bullet: {
@@ -95,7 +96,9 @@ function Perfil() {
         </Typography>
       </CardContent>
       <Typography variant="body2" component="p">
-        <Button color="red" size="small">Alterar</Button>
+        <Button color="red" size="small">
+        <Link to="alterarperfil">Alterar</Link>
+        </Button>
         </Typography>
     </Card>
     </div>

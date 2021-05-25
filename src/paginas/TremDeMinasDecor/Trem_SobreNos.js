@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-import "./SobreNos.css"
+import "./Trem_SobreNos.css"
 
 const useStyles = makeStyles({
   root: {
@@ -43,7 +43,7 @@ export default function SimpleCard() {
           Quem Somos 
         </Typography>
         <Typography className={classes.somos} variant="body2" component="p">
-        <p className="Perfil-Textodeapresentação ">
+        <p className="Trem-Textodeapresentação ">
             O Resende's Business é uma plataforma com o objetivo de reunir e dar 
             visibilidade aos microeemprendedores da cidade de Resende Costa
             (MG), que começaram a surgir principalmente após a pandemia da

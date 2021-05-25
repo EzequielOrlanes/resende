@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
-.Segredos-Textodeapresentação {
+.Trem-Textodeapresentação {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     text-align: justify;
@@ -10,7 +10,7 @@
     margin-bottom: 4%;
   }
   @media (max-width: 450px){
-    .Segredos-Textodeapresentação {
+    .Trem-Textodeapresentação {
       font-family: "Montserrat", sans-serif;
       font-size: 10;
       margin-top: 1%;
@@ -20,7 +20,7 @@
     }
   }
   @media (max-width: 1200px){
-    .Segredos-Textodeapresentação {
+    .Trem-Textodeapresentação {
       font-family: "Montserrat", sans-serif;
       font-size: 10;
       margin-top: 1%;

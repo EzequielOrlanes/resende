@@ -8,7 +8,7 @@ export default styled.div`
   width: 300px;
   background-color: white;
   color: #FFFF;
-  margin: 0 15px;
+  margin: 0 ;
   font-size: 1.5em;
   margin-left: 20px;
 `;
