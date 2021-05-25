@@ -58,6 +58,9 @@ function Menu (props){
 
     ];
 
+    const getUser = localStorage.getItem("getUser");
+
+
     return (
         <>
             <AppBar position="static" style= {{backgroundColor: "Transparent"}}>
@@ -68,6 +71,7 @@ function Menu (props){
                         aria-label="menu"
                         onClick ={() => handleDrawer(!open)}>
                         <MdMenu/>
+                        {getUser}
                     </IconButton>
 
                     <div class="elemento">

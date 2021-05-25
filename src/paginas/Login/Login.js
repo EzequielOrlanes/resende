@@ -16,6 +16,8 @@ function Login() {
     e.preventDefault();
     try {
       const response = await api.post("/login", { email, password });
+      localStorage.setItem("getUser", response.data.user.NomeEmp);
+      localStorage.setItem("getUser_Id", response.data.user.user_id);
       alert("Bem vindo", response.data.user.name);
       login(response.data.accessToken);
       history.push("/home");

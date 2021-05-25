@@ -49,10 +49,10 @@ function UserMenu(){
                 <Route path="/Perfil" component={Perfil}/>
                 <Route path="/Cadastro" component={Cadastro}/>
                 <Route path="/QuemSomos" component={QuemSomos}/>
-                <PrivateRoute path="/SegredosDeMinas" component={SegredosDeMinas}/>
+                <Route path="/SegredosDeMinas" component={SegredosDeMinas}/>
                 <Route path="/TremDeMinasDecor" component={TremDeMinasDecor}/>
                 <Route path="/TricoDaVovo" component={TricoDaVovo}/>
-                <Route path="/AlterarPerfil" component={AlterarPerfil}/>
+                <PrivateRoute path="/AlterarPerfil/" component={AlterarPerfil}/>
                 <Route component={() => <Redirect to="/home"></Redirect>}/>
             </Switch> 
         

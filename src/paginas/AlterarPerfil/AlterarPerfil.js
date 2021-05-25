@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Col, Button } from "react-bootstrap";
 import "./AlterarPerfil.css";
 import api from "../../services/api";
@@ -7,35 +7,46 @@ import { useHistory } from "react-router-dom";
 
 function AlterarPerfil() {
   const [NomeEmp, setNomeEmp] = useState();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [tipo, setTipo] = useState();
   const [aae, setAae] = useState();
   const [tel, setTel] = useState();
   const [end, setEnd] = useState();
   const [num, setNum] = useState();
   const [comp, setComp] = useState();
   const [desc, setDesc] = useState();
-  const [cnpj, setCnpj] = useState();
   const history = useHistory();
+
+  const user_id = localStorage.getItem("getUser_Id");
+
+  useEffect(() => {
+    async function getUsuario() {
+      var response = await api.get('/users/'+ user_id);
+      console.log("🚀 ~ file: AlterarPerfil.js ~ line 24 ~ getUsuario ~ response", response);
+      setNomeEmp(response.data.NomeEmp);
+
+
+    }
+    getUsuario();
+  },[])
+
+
 
   async function handlealterarperfil(e) {
     e.preventDefault();
+
+    const data = {
+      NomeEmp:NomeEmp,
+    	aae:aae,
+    	tel:tel,
+    	end:end,
+    	num:num,
+    	comp:comp,
+      desc:desc,
+    };
+
+
     try {
-      const response = await api.post("/alterarperfil", {
-        email,
-        password,
-        NomeEmp,
-        tipo,
-        aae,
-        tel,
-        end,
-        num,
-        comp,
-        desc,
-        cnpj,
-      });
-      history.push("/login");
+      const response = await api.put("/alterarperfil/"+user_id, data);
+      history.push("/perfil");
     } catch (error) {
       if (error.response.status === 403) {
         alert("Preencha Corretamente Os Campos!");
@@ -59,7 +70,7 @@ function AlterarPerfil() {
             <Form.Label>Nome da Empresa</Form.Label>
             <Form.Control
               type="NomeEmp"
-              placeholder="Nome"
+              placeholder={NomeEmp}
               onChange={(e) => setNomeEmp(e.target.value)}
             />
           </Form.Group>
@@ -70,7 +81,7 @@ function AlterarPerfil() {
               <Form.Label>Área de atuação do empreendimento</Form.Label>
               <Form.Control
                 type="aae"
-                placeholder="Ex: artesanato, alimentos, vestuário, outros"
+                placeholder={aae}
                 onChange={(e) => setAae(e.target.value)}
               />
             </Form.Group>
