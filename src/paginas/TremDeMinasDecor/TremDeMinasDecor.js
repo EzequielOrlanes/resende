@@ -98,7 +98,7 @@ function TremDeMinas() {
               <Typography variant="body2" component="p"></Typography>
             </Card>
           </div>
-          <div className="fotos">
+          <div className="Trem-fotos">
             <Trem_Fotos />
           </div>
         </div>
