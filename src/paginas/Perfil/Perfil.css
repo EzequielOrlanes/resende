@@ -57,7 +57,15 @@
     margin-bottom: 5%;
     margin-top: 5%;
 }
-
+.Perfil-Textodeapresentação {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+  }
 @media (max-width: 450px){
     .cab{
         height: 100%;
@@ -88,6 +96,7 @@
     .fotos{
         margin-top: 6vh;
         display: flex;
+        margin-bottom: 5%;
         align-content: center;
         justify-content: center;
         align-items: center;
@@ -112,6 +121,14 @@
         margin-right: 5%;
         margin-top: 20%;
     }
+    .Perfil-Textodeapresentação {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+      }
 }
 @media (max-width: 1200px){
     .cab{
@@ -167,4 +184,12 @@
         margin-right: 5%;
         margin-top: 26%;
     }
+    .Perfil-Textodeapresentação {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2%;
+      }
 }

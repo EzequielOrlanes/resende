@@ -14,6 +14,31 @@ import { Link } from "react-router-dom";
 import api from "../../services/api";
 import { useHistory } from "react-router-dom";
 
+const USEStyles = makeStyles({
+  root: {
+    display:'flex',
+    flexWrap: 'wrap',
+    maxWidth: '100vw',
+    width: '100%',
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+    alignItems:'center',
+    justifyItems:'center',
+  },
+  pos: {
+    marginBottom: 12,
+  },
+  somos: {
+    maxWidth: '100vw',
+},
+});
+
 const usestyles = makeStyles({
   root: {
     display: "flex",
@@ -95,6 +120,8 @@ function Perfil() {
   };
 
   const Classes = usestyles();
+  const CLASSES = USEStyles();
+  const Bull = <span className={CLASSES.bullet}>•</span>;
   const bull = <span className={Classes.bullet}>•</span>;
 
   return (
@@ -152,12 +179,6 @@ function Perfil() {
                 <Typography variant="body2" component="p">
                   {comp}
                 </Typography>
-                <Typography className={Classes.pos} color="textSecondary">
-                  Descrição:
-                </Typography>
-                <Typography variant="body2" component="p">
-                {desc}
-                </Typography>
               </CardContent>
               <Typography variant="body2" component="p">
                 <Button color="red" size="small">
@@ -171,6 +192,21 @@ function Perfil() {
           </div>
         </div>
         <div className="Perfil-quemsomos">
+        <Card className={CLASSES.root}>
+      <CardContent>
+        <Typography className={CLASSES.title} color="textSecondary" gutterBottom>
+          Quem Somos 
+        </Typography>
+        <Typography className={CLASSES.somos} variant="body2" component="p">
+        <p className="Perfil-Textodeapresentação ">
+        {desc}
+          </p>
+          
+        </Typography>
+        <Typography variant="body2" component="p">
+        </Typography>
+      </CardContent>
+    </Card>
         </div>
         <Footer />
       </div>

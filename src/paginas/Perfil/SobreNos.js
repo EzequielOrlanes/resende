@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 
 import "./SobreNos.css"
 
-const useStyles = makeStyles({
+const UseStyles = makeStyles({
   root: {
     display:'flex',
     flexWrap: 'wrap',
@@ -33,16 +33,16 @@ const useStyles = makeStyles({
 });
 
 export default function SimpleCard() {
-  const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
+  const CLASSES = UseStyles();
+  const bull = <span className={CLASSES.bullet}>•</span>;
 
   return (
-    <Card className={classes.root}>
+    <Card className={CLASSES.root}>
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={CLASSES.title} color="textSecondary" gutterBottom>
           Quem Somos 
         </Typography>
-        <Typography className={classes.somos} variant="body2" component="p">
+        <Typography className={CLASSES.somos} variant="body2" component="p">
         <p className="Perfil-Textodeapresentação ">
             O Resende's Business é uma plataforma com o objetivo de reunir e dar 
             visibilidade aos microeemprendedores da cidade de Resende Costa
