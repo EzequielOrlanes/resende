@@ -44,11 +44,6 @@ function Menu (props){
         text: "Empreendimentos",
         },
 
-        {
-        pathName: "/empresas",
-        icon: <MdLocationCity/>,
-        text: "Empresas",
-        },
 
         {
         pathName: "/quemsomos",

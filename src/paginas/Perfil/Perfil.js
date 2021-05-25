@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
   const usestyles = makeStyles({
     root: {
       display:'flex',
-      minWidth: 300,
+      minWidth: '60%',
 
     },
     bullet: {
