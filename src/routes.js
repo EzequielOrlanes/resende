@@ -46,7 +46,7 @@ function UserMenu(){
                 <Route path="/home" component={Home}/>
                 <Route path="/Empreendimentos" component={Empreendimentos}/>
                 <Route path="/Empresas" component={Empresas}/>
-                <Route path="/Perfil" component={Perfil}/>
+                <PrivateRoute path="/Perfil" component={Perfil}/>
                 <Route path="/Cadastro" component={Cadastro}/>
                 <Route path="/QuemSomos" component={QuemSomos}/>
                 <Route path="/SegredosDeMinas" component={SegredosDeMinas}/>

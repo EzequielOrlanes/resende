@@ -41,12 +41,15 @@
     float: right;
     
 }
+
 .Perfil-informaçoes{
+    max-width: 50vh;
     display: flex;
     margin-top: 15%;
     margin-left: 5%;
     margin-right: 5%;
 }
+
 .Perfil-quemsomos{
     display: flex;
     margin-left: 5%;

@@ -50,6 +50,7 @@ function AlterarPerfil() {
 
     try {
       const response = await api.put("/alterarperfil/" + user_id, data);
+      alert("Dados alterados com sucesso");
       history.push("/perfil");
     } catch (error) {
       if (error.response.status === 403) {
