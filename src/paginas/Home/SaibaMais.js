@@ -26,7 +26,7 @@ const images = [
   },
 
   {
-    url: '/imagem/3.jpg',
+    url: '/imagem/img8.jpg',
     title: 'SAIBA MAIS',
     width: '50%',
     pathName: '/tricodavovo',
