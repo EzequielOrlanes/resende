@@ -95,11 +95,6 @@ function SegredosDeMinas() {
           Av.Primeiro
         </Typography>
       </CardContent>
-      <Typography variant="body2" component="p">
-        <Button color="red" size="small">
-        <Link to="alterarperfil">Alterar</Link>
-        </Button>
-        </Typography>
     </Card>
     </div>
         <div className="fotos">
