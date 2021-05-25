@@ -19,33 +19,37 @@ function AlterarPerfil() {
 
   useEffect(() => {
     async function getUsuario() {
-      var response = await api.get('/users/'+ user_id);
-      console.log("🚀 ~ file: AlterarPerfil.js ~ line 24 ~ getUsuario ~ response", response);
+      var response = await api.get("/users/" + user_id);
+      console.log(
+        "🚀 ~ file: AlterarPerfil.js ~ line 24 ~ getUsuario ~ response",
+        response
+      );
       setNomeEmp(response.data.NomeEmp);
-
-
+      setAae(response.data.aae);
+      setTel(response.data.tel);
+      setEnd(response.data.end);
+      setNum(response.data.num);
+      setComp(response.data.comp);
+      setDesc(response.data.desc);
     }
     getUsuario();
-  },[])
-
-
+  }, []);
 
   async function handlealterarperfil(e) {
     e.preventDefault();
 
     const data = {
-      NomeEmp:NomeEmp,
-    	aae:aae,
-    	tel:tel,
-    	end:end,
-    	num:num,
-    	comp:comp,
-      desc:desc,
+      NomeEmp: NomeEmp,
+      aae: aae,
+      tel: tel,
+      end: end,
+      num: num,
+      comp: comp,
+      desc: desc,
     };
 
-
     try {
-      const response = await api.put("/alterarperfil/"+user_id, data);
+      const response = await api.put("/alterarperfil/" + user_id, data);
       history.push("/perfil");
     } catch (error) {
       if (error.response.status === 403) {
@@ -70,18 +74,17 @@ function AlterarPerfil() {
             <Form.Label>Nome da Empresa</Form.Label>
             <Form.Control
               type="NomeEmp"
-              placeholder={NomeEmp}
+              value={NomeEmp}
               onChange={(e) => setNomeEmp(e.target.value)}
             />
           </Form.Group>
-          
-         
+
           <Form.Group>
             <Form.Group controlId="formBasicName">
               <Form.Label>Área de atuação do empreendimento</Form.Label>
               <Form.Control
                 type="aae"
-                placeholder={aae}
+                value={aae}
                 onChange={(e) => setAae(e.target.value)}
               />
             </Form.Group>
@@ -91,7 +94,7 @@ function AlterarPerfil() {
             <Form.Label>Telefone para contato</Form.Label>
             <Form.Control
               type="tel"
-              placeholder="Ex: (99)99999-9999"
+              value={tel}
               onChange={(e) => setTel(e.target.value)}
             />
           </Form.Group>
@@ -99,7 +102,7 @@ function AlterarPerfil() {
             <Form.Label>Endereço</Form.Label>
             <Form.Control
               type="end"
-              placeholder="Av. Primeiro"
+              value={end}
               onChange={(e) => setEnd(e.target.value)}
             />
           </Form.Group>
@@ -108,7 +111,7 @@ function AlterarPerfil() {
               <Form.Label>Número</Form.Label>
               <Form.Control
                 type="num"
-                placeholder="Numero"
+                value={num}
                 onChange={(e) => setNum(e.target.value)}
               />
             </Form.Group>
@@ -117,7 +120,7 @@ function AlterarPerfil() {
               <Form.Label>Complemento</Form.Label>
               <Form.Control
                 type="comp"
-                placeholder="Complemento"
+                value={comp}
                 onChange={(e) => setComp(e.target.value)}
               />
             </Form.Group>
@@ -129,7 +132,7 @@ function AlterarPerfil() {
               as="textarea"
               rows={3}
               type="desc"
-              placeholder="Complemento"
+              value={desc}
               onChange={(e) => setDesc(e.target.value)}
             />
           </Form.Group>
