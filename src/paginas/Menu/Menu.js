@@ -40,7 +40,7 @@ function Menu (props){
             logout();
             localStorage.removeItem("getUser_Id");
             alert("Logout Realizado com sucesso!");
-            history.push("/home");
+            history.push("/login");
         } catch (error) {
             if (error.response.status === 403) {
               alert("Credenciais Invalidas!");
