@@ -1,68 +1,68 @@
 const Segredos_tileData = [
     {
       img: '/imagem/prataria.png',
-      title: 'Prataria',
-      author: '19,90',
+      title: 'Supla',
+      author: 'R$ 19,90',
       cols: 2,
       featured: true,
     },
     {
       img: '/imagem/tapete.png',
       title: 'Tapete',
-      author: '5,00',
+      author: 'R$ 5,00',
     },
     {
       img: '/imagem/porcelanas.png',
       title: 'Porcelanas',
-      author: '50,00',
+      author: 'R$ 50,00',
     },
     {
       img: '/imagem/arte.jpg',
       title: 'Pote',
-      author: '15,00',
+      author: 'R$ 15,00',
       featured: true,
     },
     {
       img: '/imagem/almofada.png',
       title: 'Almofadas',
-      author: '10,00',
+      author: 'R$ 10,00',
+    },
+    {
+      img: '/imagem/cama2.jpeg',
+      title: 'Colcha',
+      author: 'R$ 30,00',
+    },
+    {
+      img: '/imagem/bolinha.jpeg',
+      title: 'Almofada de Nó',
+      author: 'R$ 22,00',
+      cols: 2,
+    },
+    {
+      img: '/imagem/flor.jpeg',
+      title: 'Flor',
+      author: 'R$ 22,00',
+    },
+    {
+      img: '/imagem/divino.jpeg',
+      title: 'Mandala',
+      author: 'R$ 11,00',
+    },
+    {
+      img: '/imagem/img9.jpg',
+      title: 'Cestas',
+      author: 'R$ 15,00',
+    },
+    {
+      img: '/imagem/socadoralho.jpeg',
+      title: 'Socador de Alhor',
+      cols: 2,
+      author: 'R$ 15,11',
     },
     {
       img: '/imagem/prataria.png',
-      title: 'Prataria',
-      author: '10,00',
-    },
-    {
-      img: '/imagem/tapete.png',
-      title: 'Tapete',
-      author: '5,00',
-      cols: 2,
-    },
-    {
-      img: '/imagem/porcelanas.png',
-      title: 'Porcelanas',
-      author: '50,00',
-    },
-    {
-      img: '/imagem/red.jpeg',
-      title: 'Vermelho',
-      author: '10,00',
-    },
-    {
-      img: '/imagem/red.jpeg',
-      title: 'Cerveja',
-      author: '10,00',
-    },
-    {
-      img: '/imagem/red.jpeg',
-      title: 'Sea star',
-      cols: 2,
-      author: '821292',
-    },
-    {
-      img: '/imagem/red.jpeg',
-      title: 'Bike',
-      author: 'danfador',
+      title: 'Supla',
+      author: 'R$ 90,00',
     },
   ];
   

@@ -56,7 +56,7 @@ function TricoDaVovo() {
       <Menu />
       <div className="Pagina-Trico">
         <div className="Trico-ima">
-          <img className="Trico-per" src="./imagem/tapete.png" />
+          <img className="Trico-per" src="./imagem/img8.jpg" />
           <div className="Triconome">Trico da vovó</div>
         </div>
         <div className="Trico-cab">

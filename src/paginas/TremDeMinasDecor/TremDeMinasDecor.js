@@ -56,7 +56,7 @@ function TremDeMinas() {
       <Menu />
       <div className="Pagina-Trem">
         <div className="Trem-ima">
-          <img className="Trem-per" src="./imagem/tapete.png" />
+          <img className="Trem-per" src="./imagem/trem.jpeg" />
           <div className="Tremnome">Trem De Minas</div>
         </div>
         <div className="Trem-cab">
