@@ -2,6 +2,25 @@
     width: 260px;
 }
 
+.avatar{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.grid{
+    display: flex;
+    margin-left: 10px;
+}
+
+.logoavatar{
+    display: flex;
+}
+
 .listText{
     color: #7ca494;
     margin-left: 15px;
@@ -40,21 +59,30 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    
-
 }
+
 .elemento{
-    top:0px;
-    margin-left:auto;
-    margin-right:auto;
-    left:0px;
+    margin: auto;
 }
 
-@media (max-width: 700px){
+.uni{
+    display: flex;
+    flex-direction: column;
+}
+
+.uni2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 770px){
 
         .elemento{
             width: 100%;
             align-content: center;
+            justify-content: center;
         }
 
         .e1{
@@ -66,5 +94,16 @@
 
         .Drawer, .barra, .container{
             width: 100%;
+        }
+
+        .avatar, .logoavatar{
+            width: 50%;
+            font-size: .9rem;
+        }
+
+        .grid{
+            width: 50%;
+            height: 50%;
+            margin-left: 5px;
         }
 }

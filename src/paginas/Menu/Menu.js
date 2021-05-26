@@ -1,9 +1,11 @@
 import React, {useState} from "react";
-import {Drawer, List, ListItem, ListItemText, Typography, IconButton, AppBar, Toolbar} from  "@material-ui/core";
+import {Drawer, List, ListItem, ListItemText, Typography, IconButton, AppBar, Toolbar, Avatar, Button} from  "@material-ui/core";
 import {MdHome, MdPerson, MdLaptop, MdMenu, MdExplicit, MdHelpOutline, MdLocationCity} from "react-icons/md";
 import { IconContext } from "react-icons/lib";
 import "./Menu.css";
 import {useHistory} from "react-router-dom";
+import api from "../../services/api";
+import { logout } from "../../services/auth";
 
 function Menu (props){
     const history = useHistory();
@@ -15,7 +17,23 @@ function Menu (props){
     }
 
     function handleDrawer(isOpen){
-        setOpen(isOpen)
+        setOpen(isOpen);
+    }
+
+    async function handlelogout(e) {
+        e.preventDefault();
+        try{
+            const response = await api.post("/logout");
+            history.push("/login");
+        } catch (error) {
+            if (error.response.status === 403) {
+              alert("Credenciais Invalidas!");
+            } else {
+              alert(error.response.data.notification);
+            }
+            console.warn(error);
+          }
+
     }
 
     const pages = [
@@ -54,6 +72,8 @@ function Menu (props){
     ];
 
     const getUser = localStorage.getItem("getUser");
+    // const getFoto = localStorage.getItem("getFoto");
+
 
 
     return (
@@ -65,15 +85,29 @@ function Menu (props){
                         edge="start" 
                         aria-label="menu"
                         onClick ={() => handleDrawer(!open)}>
+                        
                         <MdMenu/>
-                        {getUser}
+                        
                     </IconButton>
 
                     <div class="elemento">
                         <img className='e1' src= "./imagem/Logo4.png"/> 
                         <img className='e2' src= "./imagem/Loguinho.png"/> 
                     </div>
-            
+
+                
+                <div className='uni'>
+                    <div className='avatar'>{getUser}
+                    
+                        <div className='grid'>
+                        <Avatar src='logoavatar'></Avatar>
+                        </div>
+                        </div>
+                        <div className='uni2'>
+                        <Button  onClick={handlelogout}>Logout</Button></div>
+                        
+                </div>
+
                 </Toolbar>
 
             </AppBar>
