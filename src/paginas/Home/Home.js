@@ -22,8 +22,10 @@ function Home() {
           </div>
 
           <div className="Saiba-Mais-section">
-            <div className="images">
-              <SaibaMais />
+            <div className="Saiba-Mais">
+
+              <SaibaMais/>
+              
             </div>
           </div>
         </div>
