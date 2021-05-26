@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     minWidth: 300,
     width: '100%',
+    marginBottom: '45vh',
   
   },
   gridList: {

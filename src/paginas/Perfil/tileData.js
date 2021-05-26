@@ -43,27 +43,6 @@ const tileData = [
       title: 'Porcelanas',
       author: '50,00',
     },
-    {
-      img: '/imagem/red.jpeg',
-      title: 'Vermelho',
-      author: '10,00',
-    },
-    {
-      img: '/imagem/red.jpeg',
-      title: 'Cerveja',
-      author: '10,00',
-    },
-    {
-      img: '/imagem/red.jpeg',
-      title: 'Sea star',
-      cols: 2,
-      author: '821292',
-    },
-    {
-      img: '/imagem/red.jpeg',
-      title: 'Bike',
-      author: 'danfador',
-    },
   ];
   
   export default tileData;

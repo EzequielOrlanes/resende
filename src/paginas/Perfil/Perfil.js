@@ -20,6 +20,7 @@ const USEStyles = makeStyles({
     flexWrap: 'wrap',
     maxWidth: '100vw',
     width: '100%',
+    marginTop: '12vh',
   },
   bullet: {
     display: 'inline-block',
