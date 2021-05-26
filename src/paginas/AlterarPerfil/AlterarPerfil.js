@@ -20,10 +20,6 @@ function AlterarPerfil() {
   useEffect(() => {
     async function getUsuario() {
       var response = await api.get("/users/" + user_id);
-      console.log(
-        "🚀 ~ file: AlterarPerfil.js ~ line 24 ~ getUsuario ~ response",
-        response
-      );
       setNomeEmp(response.data.NomeEmp);
       setAae(response.data.aae);
       setTel(response.data.tel);
@@ -50,7 +46,7 @@ function AlterarPerfil() {
 
     try {
       const response = await api.put("/alterarperfil/" + user_id, data);
-      alert("Dados alterados com sucesso");
+      alert("Dados alterados com sucesso!");
       history.push("/perfil");
     } catch (error) {
       if (error.response.status === 403) {

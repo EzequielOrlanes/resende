@@ -1,21 +1,55 @@
-import React, {useState} from "react";
-import {Drawer, List, ListItem, ListItemText, Typography, IconButton, AppBar, Toolbar} from  "@material-ui/core";
+import React, { useState, useEffect } from "react";
+import {Drawer, List, ListItem, ListItemText, Typography, IconButton, AppBar, Toolbar, Avatar, Button} from  "@material-ui/core";
 import {MdHome, MdPerson, MdLaptop, MdMenu, MdExplicit, MdHelpOutline, MdLocationCity} from "react-icons/md";
 import { IconContext } from "react-icons/lib";
 import "./Menu.css";
 import {useHistory} from "react-router-dom";
+import api from "../../services/api";
+import { logout } from "../../services/auth";
 
 function Menu (props){
     const history = useHistory();
     const [currentPage, setCurrentPage] = useState("/home");
     const [open, setOpen] = useState(false);
+    const [NomeEmp, setNomeEmp] = useState();
+
+    const user_id = localStorage.getItem("getUser_Id");
+
+    useEffect(() => {
+        async function getUsuario() {
+          var response = await api.get("/users/" + user_id);
+          setNomeEmp(response.data.NomeEmp);
+        }
+        getUsuario();
+      }, []);
+
+
+
     function handleClick(pathName){
         history.push(pathName);
         setCurrentPage(pathName)
     }
 
     function handleDrawer(isOpen){
-        setOpen(isOpen)
+        setOpen(isOpen);
+    }
+
+    async function handlelogout(e) {
+        e.preventDefault();
+        try{
+            logout();
+            localStorage.removeItem("getUser_Id");
+            alert("Logout Realizado com sucesso!");
+            history.push("/login");
+        } catch (error) {
+            if (error.response.status === 403) {
+              alert("Credenciais Invalidas!");
+            } else {
+              alert(error.response.data.notification);
+            }
+            console.warn(error);
+          }
+
     }
 
     const pages = [
@@ -54,6 +88,8 @@ function Menu (props){
     ];
 
     const getUser = localStorage.getItem("getUser");
+    // const getFoto = localStorage.getItem("getFoto");
+
 
 
     return (
@@ -65,15 +101,29 @@ function Menu (props){
                         edge="start" 
                         aria-label="menu"
                         onClick ={() => handleDrawer(!open)}>
+                        
                         <MdMenu/>
-                        {getUser}
+                        
                     </IconButton>
 
                     <div class="elemento">
                         <img className='e1' src= "./imagem/Logo4.png"/> 
                         <img className='e2' src= "./imagem/Loguinho.png"/> 
                     </div>
-            
+
+                
+                <div className='uni'>
+                    <div className='avatar'>{NomeEmp}
+                    
+                        <div className='grid'>
+                        <Avatar src='logoavatar'></Avatar>
+                        </div>
+                        </div>
+                        <div className='uni2'>
+                        <Button  onClick={handlelogout}>Logout</Button></div>
+                        
+                </div>
+
                 </Toolbar>
 
             </AppBar>
@@ -110,3 +160,7 @@ export default Menu;
                             <img scr="/imagem/Logo.png"/>
 
                     </div>*/ 
+
+
+
+                    

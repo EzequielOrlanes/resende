@@ -14,7 +14,6 @@
 
 .global{
     display: flex;
-    
     font-family: 'Bebas Neue', cursive;
     font-size: .2rem;
     align-content: flex-start;
