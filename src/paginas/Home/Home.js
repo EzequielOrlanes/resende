@@ -54,7 +54,7 @@ function Home() {
               presidente da Câmara Francisco Mendes de Resende. Desde 1923 o
               município passou a denominar-se simplesmente Resende Costa
             </p>
-          </div>
+          </div >
           <img className="fotocidade" src="/imagem/baianas.jpg"></img>
         </div>
 
