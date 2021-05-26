@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import {Drawer, List, ListItem, ListItemText, Typography, IconButton, AppBar, Toolbar, Avatar, Button} from  "@material-ui/core";
 import {MdHome, MdPerson, MdLaptop, MdMenu, MdExplicit, MdHelpOutline, MdLocationCity} from "react-icons/md";
 import { IconContext } from "react-icons/lib";
@@ -11,6 +11,20 @@ function Menu (props){
     const history = useHistory();
     const [currentPage, setCurrentPage] = useState("/home");
     const [open, setOpen] = useState(false);
+    const [NomeEmp, setNomeEmp] = useState();
+
+    const user_id = localStorage.getItem("getUser_Id");
+
+    useEffect(() => {
+        async function getUsuario() {
+          var response = await api.get("/users/" + user_id);
+          setNomeEmp(response.data.NomeEmp);
+        }
+        getUsuario();
+      }, []);
+
+
+
     function handleClick(pathName){
         history.push(pathName);
         setCurrentPage(pathName)
@@ -23,8 +37,10 @@ function Menu (props){
     async function handlelogout(e) {
         e.preventDefault();
         try{
-            const response = await api.post("/logout");
-            history.push("/login");
+            logout();
+            localStorage.removeItem("getUser_Id");
+            alert("Logout Realizado com sucesso!");
+            history.push("/home");
         } catch (error) {
             if (error.response.status === 403) {
               alert("Credenciais Invalidas!");
@@ -97,7 +113,7 @@ function Menu (props){
 
                 
                 <div className='uni'>
-                    <div className='avatar'>{getUser}
+                    <div className='avatar'>{NomeEmp}
                     
                         <div className='grid'>
                         <Avatar src='logoavatar'></Avatar>
@@ -144,3 +160,7 @@ export default Menu;
                             <img scr="/imagem/Logo.png"/>
 
                     </div>*/ 
+
+
+
+                    
