@@ -16,7 +16,10 @@
     width: 100%;
     height: 31%; 
     background: fixed;
-    background-image:url(baianas.jpg);
+    background-image:url(artesanato-facil.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .Trem-per{
     border-radius: 50%;
@@ -29,7 +32,7 @@
     margin-top: 2%;
     margin-left: 6%;
     font-family: 'Bebas Neue', cursive;
-    font-size:  1.5rem;
+    font-size:  1.9rem;
     text-decoration: none;
     font-weight: 70;
     font-style: normal;
@@ -46,7 +49,6 @@
     margin-top: 15%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: rgb(229, 236, 243);
 }
 .Trem-quemsomos{
     display: flex;
@@ -55,7 +57,17 @@
     margin-bottom: 5%;
     margin-top: 5%;
 }
-
+.texto-perfil1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .texto-perfil2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    text-align: justify;
+    font-weight:bold;
+  }
 @media (max-width: 450px){
     .Trem-cab{
         height: 100%;
@@ -64,8 +76,10 @@
     .Trem-ima{
         width: 100%;
         height: 15%; 
-        background: fixed;
-        background-image:url(baianas.jpg);
+        background-image:url(artesanato-facil.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .Trem-per{
         border-radius: 50%;
@@ -119,8 +133,10 @@
     .Trem-ima{
         width: 100%;
         height: 15%; 
-        background: fixed;
-        background-image:url(baianas.jpg);
+        background-image:url(artesanato-facil.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .Trem-per{
         border-radius: 50%;

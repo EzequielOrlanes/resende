@@ -63,37 +63,47 @@ function TricoDaVovo() {
           <div className="Trico-informaçoes">
             <Card className={Classes.root}>
               <CardContent>
-                <Typography
-                  className={Classes.title}
-                  color="textSecondary"
-                  gutterBottom
-                >
+                  <div className="texto-perfil1">
                   Área:
-                </Typography>
-                <Typography variant="body2" component="p">
-                  Artesanato.
-                </Typography>
+                </div>
+                <div className="texto-perfil2">
+                Artesanato
+                </div>
                 <p></p>
-                <Typography className={Classes.pos} color="textSecondary">
+                <div className="texto-perfil1">
                   E-mail:
-                </Typography>
-                <Typography variant="body2" component="p">
+                </div>
+                <div className="texto-perfil2">
                   tricodavovo@gmail.com.br
-                </Typography>
+                </div>
                 <p></p>
-                <Typography className={Classes.pos} color="textSecondary">
+                <div className="texto-perfil1">
                   Telefone:
-                </Typography>
-                <Typography variant="body2" component="p">
-                  (99) 99999-9999.
-                </Typography>
+                </div>
+                <div className="texto-perfil2">
+                  (99) 98888-7777
+                </div>
                 <p></p>
-                <Typography className={Classes.pos} color="textSecondary">
+                <div className="texto-perfil1">
                   Endereço:
-                </Typography>
-                <Typography variant="body2" component="p">
-                  Av.Primeiro
-                </Typography>
+                </div>
+                <div className="texto-perfil2">
+                  R. dos Navegadores - Resende Costa
+                </div>
+                <p></p>
+                <div className="texto-perfil1">
+                  Número:
+                </div>
+                <div className="texto-perfil2">
+                  97
+                </div>
+                <p></p>
+                <div className="texto-perfil1">
+                  Complemento:
+                </div>
+                <div className="texto-perfil2">
+                  Esquina com Av. Principal
+                </div>
               </CardContent>
               <Typography variant="body2" component="p"></Typography>
             </Card>

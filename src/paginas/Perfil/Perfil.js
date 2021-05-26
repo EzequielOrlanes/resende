@@ -136,49 +136,47 @@ function Perfil() {
           <div className="Perfil-informaçoes" >
             <Card className={Classes.root}>
               <CardContent>
-                <Typography
-                  className={Classes.title}
-                  color="textSecondary"
-                  gutterBottom
-                >
+                <div className="texto-perfil1">
                   Área:
-                </Typography>
-                <Typography variant="body2" component="p">
+                </div>
+                <div className="texto-perfil2">
                   {aae}
-                </Typography>
+                </div>
                 <p></p>
-                <Typography className={Classes.pos} color="textSecondary">
+                <div className="texto-perfil1">
                   E-mail:
-                </Typography>
-                <Typography variant="body2" component="p">
+                </div>
+                <div className="texto-perfil2">
                   {email}
-                </Typography>
+                </div>
                 <p></p>
-                <Typography className={Classes.pos} color="textSecondary">
+                <div className="texto-perfil1">
                   Telefone:
-                </Typography>
-                <Typography variant="body2" component="p">
+                </div>
+                <div className="texto-perfil2">
                   {tel}
-                </Typography>
+                </div>
                 <p></p>
-                <Typography className={Classes.pos} color="textSecondary">
+                <div className="texto-perfil1">
                   Endereço:
-                </Typography>
-                <Typography variant="body2" component="p">
+                </div>
+                <div className="texto-perfil2">
                   {end}
-                </Typography>
-                <Typography className={Classes.pos} color="textSecondary">
-                  Numero:
-                </Typography>
-                <Typography variant="body2" component="p">
+                </div>
+                <p></p>
+                <div className="texto-perfil1">
+                  Número:
+                </div>
+                <div className="texto-perfil2">
                   {num}
-                </Typography>
-                <Typography className={Classes.pos} color="textSecondary">
+                </div>
+                <p></p>
+                <div className="texto-perfil1">
                   Complemento:
-                </Typography>
-                <Typography variant="body2" component="p">
+                </div>
+                <div className="texto-perfil2">
                   {comp}
-                </Typography>
+                </div>
               </CardContent>
               <Typography variant="body2" component="p">
                 <Button color="red" size="small">

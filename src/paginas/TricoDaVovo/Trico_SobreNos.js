@@ -44,15 +44,8 @@ export default function SimpleCard() {
         </Typography>
         <Typography className={classes.somos} variant="body2" component="p">
         <p className="Trico-Textodeapresentação ">
-            O Resende's Business é uma plataforma com o objetivo de reunir e dar 
-            visibilidade aos microeemprendedores da cidade de Resende Costa
-            (MG), que começaram a surgir principalmente após a pandemia da
-            Covid-19, a fim de impulsionar o comércio da cidade local. O sistema
-            web foi desenvolvido por alunos de graduação das Engenharias
-            Elétrica e de Controle e Automação da Universidade Federal de Minas
-            Gerais(UFMG), e atualmente trainees da CPE - Consultoria e projetos
-            Elétricos, uma empresa júnior sem fins lucrativos que busca
-            incentivar o empreendedorismo no Brasil.
+        Somos um empreendimento familiar que produz roupas e enfeites
+                    de tricô. Cada peça feita manualmente e exclusiva para você!
           </p>
           
         </Typography>

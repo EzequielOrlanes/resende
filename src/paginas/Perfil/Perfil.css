@@ -29,7 +29,7 @@
     margin-top: 2%;
     margin-left: 6%;
     font-family: 'Bebas Neue', cursive;
-    font-size:  1.5rem;
+    font-size:  1.9rem;
     text-decoration: none;
     font-weight: 70;
     font-style: normal;
@@ -65,6 +65,18 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 4%;
+  }
+
+  .texto-perfil1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .texto-perfil2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    text-align: justify;
+    font-weight:bold;
   }
 @media (max-width: 450px){
     .cab{

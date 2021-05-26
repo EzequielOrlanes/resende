@@ -1,167 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
 
-.Pagina-Segredos{
-    display: flex;
+.Pagina-Segredos {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.Segredos-cab {
+  display: flex;
+  max-height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.Segredos-ima {
+  width: 100%;
+  height: 31%;
+  background: fixed;
+  background-image: url(arteguarani2.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Segredos-per {
+  display: flex;
+  border-radius: 50%;
+  margin-top: 6%;
+  margin-left: 3%;
+  width: 15%;
+  height: 90%;
+  
+}
+.Segredosnome {
+  margin-top: 2%;
+  margin-left: 6%;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: 70;
+  font-style: normal;
+}
+.Segredos-fotos {
+  display: flex;
+  margin-top: 15%;
+  margin-right: 5%;
+  float: right;
+}
+.Segredos-informaçoes {
+  display: flex;
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.Segredos-quemsomos {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.texto-perfil1{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+}
+.texto-perfil2{
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  text-align: justify;
+  font-weight:bold;
+}
+
+@media (max-width: 450px) {
+  .Segredos-cab {
     height: 100%;
     width: 100%;
-    flex-wrap: wrap;
-}
-.Segredos-cab{
-    display: flex;
-    max-height: 100%;
+  }
+  .Segredos-ima {
     width: 100%;
-    flex-wrap: wrap;
-}
-.Segredos-ima{
-    width: 100%;
-    height: 31%; 
-    background: fixed;
-    background-image:url(baianas.jpg);
-}
-.Segredos-per{
+    height: 15%;
+    background-image: url(arteguarani2.jpeg);
+    background-attachment: fixed;
+  }
+  .Segredos-per {
     border-radius: 50%;
-    margin-top: 6%;
-    margin-left: 3%;
-    width: 15%;
-    height: 90%;
-}
-.Segredosnome{
+    margin-top: 50%;
+    margin-left: 5%;
+    width: 25%;
+    height: 80%;
+  }
+  .Segredosnome {
     margin-top: 2%;
     margin-left: 6%;
-    font-family: 'Bebas Neue', cursive;
-    font-size:  1.5rem;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: 70;
     font-style: normal;
-}
-.Segredos-fotos{
+  }
+  .Segredos-fotos {
+    margin-top: 6vh;
     display: flex;
-    margin-top:15%;
-    margin-right: 5%;
-    float: right;
-    
-}
-.Segredos-informaçoes{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: center;
+  }
+  .Segredos-informaçoes {
     display: flex;
-    margin-top: 15%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    float: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    margin-top: 20%;
+  }
+  .Segredos-quemsomos {
+    display: flex;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 20%;
+  }
 }
-.Segredos-quemsomos{
+@media (max-width: 1200px) {
+  .Segredos-cab {
+    height: 100%;
+    width: 100%;
+  }
+  .Segredos-ima {
+    width: 100%;
+    height: 15%;
+    background-image: url(arteguarani2.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .Segredos-per {
+    border-radius: 50%;
+    margin-top: 7%;
+    margin-left: 5%;
+    width: 22%;
+    height: 80%;
+  }
+  .Segredosnome {
+    margin-top: 2%;
+    margin-left: 6%;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 70;
+    font-style: normal;
+  }
+  .Segredos-fotos {
+    margin-top: 6vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: center;
+  }
+  .Segredos-informaçoes {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    float: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    margin-top: 20%;
+  }
+  .Segredos-quemsomos {
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-}
-
-@media (max-width: 450px){
-    .Segredos-cab{
-        height: 100%;
-        width: 100%;
-    }
-    .Segredos-ima{
-        width: 100%;
-        height: 15%; 
-        background: fixed;
-        background-image:url(baianas.jpg);
-    }
-    .Segredos-per{
-        border-radius: 50%;
-        margin-top:50%;
-        margin-left: 5%;
-        width: 25%;
-        height: 80%;
-    }
-    .Segredosnome{
-        margin-top: 2%;
-        margin-left: 6%;
-        font-family: 'Bebas Neue', cursive;
-        font-size:  1rem;
-        text-decoration: none;
-        font-weight: 70;
-        font-style: normal;
-    }
-    .Segredos-fotos{
-        margin-top: 6vh;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        float: center;
-    }
-    .Segredos-informaçoes{
-        display: flex;
-        width: 100%;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        float: center;
-        margin-left: 0%;
-        margin-right: 0%;
-        margin-bottom: 0%;
-        margin-top: 20%;
-    }
-    .Segredos-quemsomos{
-        display: flex;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 20%;
-    }
-}
-@media (max-width: 1200px){
-    .Segredos-cab{
-        height: 100%;
-        width: 100%;
-    }
-    .Segredos-ima{
-        width: 100%;
-        height: 15%; 
-        background: fixed;
-        background-image:url(baianas.jpg);
-    }
-    .Segredos-per{
-        border-radius: 50%;
-        margin-top: 7%;
-        margin-left: 5%;
-        width: 22%;
-        height: 80%;
-    }
-    .Segredosnome{
-        margin-top: 2%;
-        margin-left: 6%;
-        font-family: 'Bebas Neue', cursive;
-        font-size:  1rem;
-        text-decoration: none;
-        font-weight: 70;
-        font-style: normal;
-    }
-    .Segredos-fotos{
-        margin-top: 6vh;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        float: center;
-    }
-    .Segredos-informaçoes{
-        display: flex;
-        width: 100%;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        float: center;
-        margin-left: 0%;
-        margin-right: 0%;
-        margin-bottom: 0%;
-        margin-top: 20%;
-    }
-    .Segredos-quemsomos{
-        display: flex;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 26%;
-    }
+    margin-top: 26%;
+  }
 }

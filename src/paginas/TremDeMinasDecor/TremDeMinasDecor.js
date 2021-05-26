@@ -57,43 +57,53 @@ function TremDeMinas() {
       <div className="Pagina-Trem">
         <div className="Trem-ima">
           <img className="Trem-per" src="./imagem/trem.jpeg" />
-          <div className="Tremnome">Trem De Minas</div>
+          <div className="Tremnome">Trem De Minas Decor</div>
         </div>
         <div className="Trem-cab">
           <div className="Trem-informaçoes">
             <Card className={Classes.root}>
               <CardContent>
-                <Typography
-                  className={Classes.title}
-                  color="textSecondary"
-                  gutterBottom
-                >
-                  Área:
-                </Typography>
-                <Typography variant="body2" component="p">
-                  Artesanato.
-                </Typography>
-                <p></p>
-                <Typography className={Classes.pos} color="textSecondary">
-                  E-mail:
-                </Typography>
-                <Typography variant="body2" component="p">
-                  tremdeminas@gmail.com.br
-                </Typography>
-                <p></p>
-                <Typography className={Classes.pos} color="textSecondary">
-                  Telefone:
-                </Typography>
-                <Typography variant="body2" component="p">
-                  (99) 99999-9999.
-                </Typography>
-                <p></p>
-                <Typography className={Classes.pos} color="textSecondary">
-                  Endereço:
-                </Typography>
-                <Typography variant="body2" component="p">
-                  Av.Primeiro
-                </Typography>
+              <div className="texto-perfil1">
+          Área:
+        </div>
+        <div className="texto-perfil2">
+        Artesanato
+        </div>
+        <p></p>
+        <div className="texto-perfil1">
+          E-mail:
+        </div>
+        <div className="texto-perfil2">
+          tremdeminasdecor@gmail.com.br
+        </div>
+        <p></p>
+        <div className="texto-perfil1">
+          Telefone:
+        </div>
+        <div className="texto-perfil2">
+          (99) 99999-8888
+        </div>
+        <p></p>
+        <div className="texto-perfil1">
+          Endereço:
+        </div>
+        <div className="texto-perfil2">
+          R. Professor Silveira - Resende Costa
+        </div>
+        <p></p>
+        <div className="texto-perfil1">
+          Número:
+        </div>
+        <div className="texto-perfil2">
+          463
+        </div>
+        <p></p>
+        <div className="texto-perfil1">
+          Complemento:
+        </div>
+        <div className="texto-perfil2">
+          Apto 201
+        </div>
               </CardContent>
               <Typography variant="body2" component="p"></Typography>
             </Card>
