@@ -78,7 +78,6 @@ const UseStyles = makeStyles({
 function Perfil() {
   const [NomeEmp, setNomeEmp] = useState();
   const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
   const [tipo, setTipo] = useState();
   const [aae, setAae] = useState();
   const [tel, setTel] = useState();
@@ -87,24 +86,22 @@ function Perfil() {
   const [comp, setComp] = useState();
   const [desc, setDesc] = useState();
   const [cnpj, setCnpj] = useState();
-  const history = useHistory();
 
-  const user_id = localStorage.getItem("getUser_Id");
+  const user_id = sessionStorage.getItem("getUser_Id");
 
   useEffect(() => {
     async function getUsuario() {
       var response = await api.get("/users/" + user_id);
-      console.log(
-        "🚀 ~ file: AlterarPerfil.js ~ line 24 ~ getUsuario ~ response",
-        response
-      );
+
       setNomeEmp(response.data.NomeEmp);
       setEmail(response.data.email);
+      setTipo(response.data.tipo);
       setAae(response.data.aae);
       setTel(response.data.tel);
       setEnd(response.data.end);
       setNum(response.data.num);
       setComp(response.data.comp);
+      setCnpj(response.data.cnpj);
       setDesc(response.data.desc);
     }
     getUsuario();
@@ -138,6 +135,13 @@ function Perfil() {
             <Card className={Classes.root}>
               <CardContent>
                 <div className="texto-perfil1">
+                  Tipo do Perfil:
+                </div>
+                <div className="texto-perfil2">
+                  {tipo}
+                </div>
+                <p></p>
+                <div className="texto-perfil1">
                   Área:
                 </div>
                 <div className="texto-perfil2">
@@ -156,6 +160,13 @@ function Perfil() {
                 </div>
                 <div className="texto-perfil2">
                   {tel}
+                </div>
+                <p></p>
+                <div className="texto-perfil1">
+                  CNPJ / CPF:
+                </div>
+                <div className="texto-perfil2">
+                  {cnpj}
                 </div>
                 <p></p>
                 <div className="texto-perfil1">

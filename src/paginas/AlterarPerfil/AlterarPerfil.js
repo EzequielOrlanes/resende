@@ -13,19 +13,27 @@ function AlterarPerfil() {
   const [num, setNum] = useState();
   const [comp, setComp] = useState();
   const [desc, setDesc] = useState();
+  const [cnpj, setCnpj] = useState();
+  const [robo, setRobo] = useState("off");
   const history = useHistory();
 
-  const user_id = localStorage.getItem("getUser_Id");
+  const user_id = sessionStorage.getItem("getUser_Id");
 
   useEffect(() => {
     async function getUsuario() {
       var response = await api.get("/users/" + user_id);
+      console.log(
+        "🚀 ~ file: AlterarPerfil.js ~ line 25 ~ getUsuario ~ response",
+        response
+      );
+
       setNomeEmp(response.data.NomeEmp);
       setAae(response.data.aae);
       setTel(response.data.tel);
       setEnd(response.data.end);
       setNum(response.data.num);
       setComp(response.data.comp);
+      setCnpj(response.data.cnpj);
       setDesc(response.data.desc);
     }
     getUsuario();
@@ -41,13 +49,18 @@ function AlterarPerfil() {
       end: end,
       num: num,
       comp: comp,
+      cnpj: cnpj,
       desc: desc,
     };
 
     try {
-      const response = await api.put("/alterarperfil/" + user_id, data);
-      alert("Dados alterados com sucesso!");
-      history.push("/perfil");
+      if (robo === "on") {
+        const response = await api.put("/alterarperfil/" + user_id, data);
+        alert("Dados alterados com sucesso!");
+        history.push("/perfil");
+      } else {
+        alert("Você é um robô ?");
+      }
     } catch (error) {
       if (error.response.status === 400) {
         alert(
@@ -90,8 +103,8 @@ function AlterarPerfil() {
                 onChange={(e) => setAae(e.target.value)}
               />
               <Form.Text className="text-muted">
-              Minimo 3 digitos. Máximo 30 digitos.
-            </Form.Text>
+                Minimo 3 digitos. Máximo 30 digitos.
+              </Form.Text>
             </Form.Group>
           </Form.Group>
 
@@ -106,6 +119,20 @@ function AlterarPerfil() {
               Apenas Numeros. 11 digitos com DDD
             </Form.Text>
           </Form.Group>
+
+          <Form.Group controlId="formBasicName">
+            <Form.Label>CNPJ / CPF</Form.Label>
+            <Form.Control
+              type="cnpj"
+              value={cnpj}
+              onChange={(e) => setCnpj(e.target.value)}
+              required
+            />
+            <Form.Text className="text-muted">
+              Minimo 11 digitos. Máximo 14 digitos. Apenas Numeros.
+            </Form.Text>
+          </Form.Group>
+
           <Form.Group controlId="formBasicName">
             <Form.Label>Endereço</Form.Label>
             <Form.Control
@@ -125,9 +152,9 @@ function AlterarPerfil() {
                 value={num}
                 onChange={(e) => setNum(e.target.value)}
               />
-            <Form.Text className="text-muted">
-              Numero do endereço. Entre 0 e 9999
-            </Form.Text>
+              <Form.Text className="text-muted">
+                Numero do endereço. Entre 0 e 9999
+              </Form.Text>
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridName">
@@ -137,9 +164,9 @@ function AlterarPerfil() {
                 value={comp}
                 onChange={(e) => setComp(e.target.value)}
               />
-            <Form.Text className="text-muted">
-              Minimo 3 digitos. Máximo 30 digitos.
-            </Form.Text>
+              <Form.Text className="text-muted">
+                Minimo 3 digitos. Máximo 30 digitos.
+              </Form.Text>
             </Form.Group>
           </Form.Row>
 
@@ -160,11 +187,10 @@ function AlterarPerfil() {
             <Form.Check
               type="checkbox"
               label="Eu não sou um robô. 🕵🏾"
-              required = {true}
+              onChange={(e) => setRobo(e.target.value)}
+              required={true}
             />
-            <Form.Text className="text-muted">
-              Obrigatório!
-            </Form.Text>
+            <Form.Text className="text-muted">Obrigatório!</Form.Text>
           </Form.Group>
           <div className="Button-Cadastrar">
             <Button variant="primary" size="lg" onClick={handlealterarperfil}>

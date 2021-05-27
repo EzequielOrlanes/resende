@@ -10,7 +10,7 @@ function Cadastro() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [password2, setPassword2] = useState();
-  const [tipo, setTipo] = useState('Pessoa Fisica');
+  const [tipo, setTipo] = useState("Pessoa Fisica");
   const [aae, setAae] = useState();
   const [tel, setTel] = useState();
   const [end, setEnd] = useState();
@@ -18,14 +18,13 @@ function Cadastro() {
   const [comp, setComp] = useState();
   const [desc, setDesc] = useState();
   const [cnpj, setCnpj] = useState();
-  const [robo, setRobo] = useState('off');
+  const [robo, setRobo] = useState("off");
   const history = useHistory();
-
 
   async function handlecadastro(e) {
     e.preventDefault();
     try {
-      if (password === password2 && robo === 'on') {
+      if (password === password2 && robo === "on") {
         const response = await api.post("/cadastro", {
           email,
           password,
@@ -40,9 +39,9 @@ function Cadastro() {
           cnpj,
         });
         history.push("/login");
-      } else if(password !== password2) {
+      } else if (password !== password2) {
         alert("Senhas não compatíveis");
-      } else{
+      } else {
         alert("Você é um robô ?");
       }
     } catch (error) {
@@ -115,7 +114,7 @@ function Cadastro() {
             <Form.Check
               type="checkbox"
               label="Empresa"
-              onChange={(e) => setTipo('Empresa')}
+              onChange={(e) => setTipo("Empresa")}
               required
             />
           </Form.Group>
@@ -213,11 +212,10 @@ function Cadastro() {
             </Form.Text>
           </Form.Group>
           <Form.Group id="formGridCheckbox">
-            <Form.Check 
-            type="checkbox" 
-            label="Eu não sou um robô. 🕵🏾" 
-            onChange={(e) => setRobo(e.target.value)}
-            
+            <Form.Check
+              type="checkbox"
+              label="Eu não sou um robô. 🕵🏾"
+              onChange={(e) => setRobo(e.target.value)}
             />
 
             <Form.Text className="text-muted">Obrigatório!</Form.Text>
