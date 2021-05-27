@@ -49,8 +49,10 @@ function AlterarPerfil() {
       alert("Dados alterados com sucesso!");
       history.push("/perfil");
     } catch (error) {
-      if (error.response.status === 403) {
-        alert("Preencha Corretamente Os Campos!");
+      if (error.response.status === 400) {
+        alert(
+          "Preencha Corretamente Os Campos. Todos os campos são obrigatórios!"
+        );
       } else {
         alert(error.response.data.notification);
       }
@@ -74,6 +76,9 @@ function AlterarPerfil() {
               value={NomeEmp}
               onChange={(e) => setNomeEmp(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Minimo 3 digitos. Máximo 30 digitos.
+            </Form.Text>
           </Form.Group>
 
           <Form.Group>
@@ -84,6 +89,9 @@ function AlterarPerfil() {
                 value={aae}
                 onChange={(e) => setAae(e.target.value)}
               />
+              <Form.Text className="text-muted">
+              Minimo 3 digitos. Máximo 30 digitos.
+            </Form.Text>
             </Form.Group>
           </Form.Group>
 
@@ -94,6 +102,9 @@ function AlterarPerfil() {
               value={tel}
               onChange={(e) => setTel(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Apenas Numeros. 11 digitos com DDD
+            </Form.Text>
           </Form.Group>
           <Form.Group controlId="formBasicName">
             <Form.Label>Endereço</Form.Label>
@@ -102,6 +113,9 @@ function AlterarPerfil() {
               value={end}
               onChange={(e) => setEnd(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Minimo 3 digitos. Máximo 50 digitos.
+            </Form.Text>
           </Form.Group>
           <Form.Row>
             <Form.Group as={Col} controlId="formGridName">
@@ -111,6 +125,9 @@ function AlterarPerfil() {
                 value={num}
                 onChange={(e) => setNum(e.target.value)}
               />
+            <Form.Text className="text-muted">
+              Numero do endereço. Entre 0 e 9999
+            </Form.Text>
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridName">
@@ -120,6 +137,9 @@ function AlterarPerfil() {
                 value={comp}
                 onChange={(e) => setComp(e.target.value)}
               />
+            <Form.Text className="text-muted">
+              Minimo 3 digitos. Máximo 30 digitos.
+            </Form.Text>
             </Form.Group>
           </Form.Row>
 
@@ -132,9 +152,19 @@ function AlterarPerfil() {
               value={desc}
               onChange={(e) => setDesc(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Minimo 3 digitos. Máximo 600 digitos.
+            </Form.Text>
           </Form.Group>
           <Form.Group id="formGridCheckbox">
-            <Form.Check type="checkbox" label="Eu não sou um robô. 🕵🏾" />
+            <Form.Check
+              type="checkbox"
+              label="Eu não sou um robô. 🕵🏾"
+              required = {true}
+            />
+            <Form.Text className="text-muted">
+              Obrigatório!
+            </Form.Text>
           </Form.Group>
           <div className="Button-Cadastrar">
             <Button variant="primary" size="lg" onClick={handlealterarperfil}>

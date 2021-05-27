@@ -37,8 +37,10 @@ function Cadastro() {
       });
       history.push("/login");
     } catch (error) {
-      if (error.response.status === 403) {
-        alert("Preencha Corretamente Os Campos!");
+      if (error.response.status === 400) {
+        alert(
+          "Preencha Corretamente Os Campos. Todos os campos são obrigatórios!"
+        );
       } else {
         alert(error.response.data.notification);
       }
@@ -62,6 +64,9 @@ function Cadastro() {
               placeholder="Nome"
               onChange={(e) => setNomeEmp(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Minimo 3 digitos. Máximo 30 digitos.
+            </Form.Text>
           </Form.Group>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email Para Login</Form.Label>
@@ -70,6 +75,9 @@ function Cadastro() {
               placeholder="Email"
               onChange={(e) => setEmail(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Minimo 3 digitos. Máximo 30 digitos.
+            </Form.Text>
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
             <Form.Label>Digite uma senha</Form.Label>
@@ -78,10 +86,14 @@ function Cadastro() {
               placeholder="Senha"
               onChange={(e) => setPassword(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Minimo 6 digitos. Máximo 20 digitos.
+            </Form.Text>
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
             <Form.Label>Confirme sua Senha</Form.Label>
             <Form.Control type="password" placeholder="Senha" />
+            <Form.Text className="text-muted">Confirme Sua Senha!</Form.Text>
           </Form.Group>
           <Form.Group id="formGridCheckbox">
             <Form.Check
@@ -97,6 +109,9 @@ function Cadastro() {
               placeholder="Ex: 99.999.999/9999-99"
               onChange={(e) => setCnpj(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Minimo 11 digitos. Máximo 14 digitos. Apenas Numeros.
+            </Form.Text>
           </Form.Group>
           <Form.Group>
             <Form.Group controlId="formBasicName">
@@ -106,6 +121,9 @@ function Cadastro() {
                 placeholder="Ex: artesanato, alimentos, vestuário, outros"
                 onChange={(e) => setAae(e.target.value)}
               />
+              <Form.Text className="text-muted">
+                Minimo 3 digitos. Máximo 30 digitos.
+              </Form.Text>
             </Form.Group>
           </Form.Group>
 
@@ -116,6 +134,9 @@ function Cadastro() {
               placeholder="Ex: (99)99999-9999"
               onChange={(e) => setTel(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Apenas Numeros. 11 digitos com DDD
+            </Form.Text>
           </Form.Group>
           <Form.Group controlId="formBasicName">
             <Form.Label>Endereço</Form.Label>
@@ -124,6 +145,9 @@ function Cadastro() {
               placeholder="Av. Primeiro"
               onChange={(e) => setEnd(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Minimo 3 digitos. Máximo 50 digitos.
+            </Form.Text>
           </Form.Group>
           <Form.Row>
             <Form.Group as={Col} controlId="formGridName">
@@ -133,6 +157,9 @@ function Cadastro() {
                 placeholder="Numero"
                 onChange={(e) => setNum(e.target.value)}
               />
+              <Form.Text className="text-muted">
+                Numero do endereço. Entre 0 e 9999
+              </Form.Text>
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridName">
@@ -142,6 +169,9 @@ function Cadastro() {
                 placeholder="Complemento"
                 onChange={(e) => setComp(e.target.value)}
               />
+              <Form.Text className="text-muted">
+                Minimo 3 digitos. Máximo 30 digitos.
+              </Form.Text>
             </Form.Group>
           </Form.Row>
 
@@ -154,9 +184,13 @@ function Cadastro() {
               placeholder="Complemento"
               onChange={(e) => setDesc(e.target.value)}
             />
+            <Form.Text className="text-muted">
+              Minimo 3 digitos. Máximo 600 digitos.
+            </Form.Text>
           </Form.Group>
           <Form.Group id="formGridCheckbox">
             <Form.Check type="checkbox" label="Eu não sou um robô. 🕵🏾" />
+            <Form.Text className="text-muted">Obrigatório!</Form.Text>
           </Form.Group>
           <div className="Button-Cadastrar">
             <Button variant="primary" size="lg" onClick={handlecadastro}>
