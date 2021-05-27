@@ -6,11 +6,10 @@ import AddButon from "./AddButton";
 import { useHistory } from "react-router-dom";
 
 function Cadastro() {
-  
   const [NomeEmp, setNomeEmp] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const[password2, setPassword2] = useState();
+  const [password2, setPassword2] = useState();
   const [tipo, setTipo] = useState();
   const [aae, setAae] = useState();
   const [tel, setTel] = useState();
@@ -21,38 +20,32 @@ function Cadastro() {
   const [cnpj, setCnpj] = useState();
   const history = useHistory();
 
-function senhas(password,password2) {
-  if( password != password2){
-    alert.window()
+  function senhas(password, password2) {
+    if (password != password2) {
+      alert.window();
+    }
   }
-  
-}
   async function handlecadastro(e) {
     e.preventDefault();
     try {
-      if(password == password2){
-      
-      const response = await api.post("/cadastro", {
-        email,
-        password,
-        
-        NomeEmp,
-        tipo,
-        aae,
-        tel,
-        end,
-        num,
-        comp,
-        desc,
-        cnpj,
-      }); }
-      else{
-
-alert("Senhas não compatíveis");
-
-}
-
-      history.push("/login");
+      if (password == password2) {
+        const response = await api.post("/cadastro", {
+          email,
+          password,
+          NomeEmp,
+          tipo,
+          aae,
+          tel,
+          end,
+          num,
+          comp,
+          desc,
+          cnpj,
+        });
+        history.push("/login");
+      } else {
+        alert("Senhas não compatíveis");
+      }
     } catch (error) {
       if (error.response.status === 400) {
         alert(
@@ -76,11 +69,10 @@ alert("Senhas não compatíveis");
 
           <Form.Group controlId="formBasicName">
             <Form.Label>Nome da Empresa</Form.Label>
-            
+
             <Form.Control
               type="text"
               placeholder="Nome"
-             
               onChange={(e) => setNomeEmp(e.target.value)}
             />
             <Form.Text className="text-muted">
@@ -113,13 +105,15 @@ alert("Senhas não compatíveis");
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
             <Form.Label>Confirme sua Senha</Form.Label>
-            <Form.Control type="password" placeholder="Senha"
-             onChange={(e) => setPassword2(e.target.value)}
-            required/>
+            <Form.Control
+              type="password"
+              placeholder="Senha"
+              onChange={(e) => setPassword2(e.target.value)}
+              required
+            />
           </Form.Group>
           <Form.Group id="formGridCheckbox">
             <Form.Check
-            
               type="checkbox"
               label="Empresa"
               onChange={(e) => setTipo(e.target.value)}
@@ -145,7 +139,7 @@ alert("Senhas não compatíveis");
                 type="aae"
                 placeholder="Ex: artesanato, alimentos, vestuário, outros"
                 onChange={(e) => setAae(e.target.value)}
-                required = {'True'}
+                required={"True"}
               />
               <Form.Text className="text-muted">
                 Minimo 3 digitos. Máximo 30 digitos.
