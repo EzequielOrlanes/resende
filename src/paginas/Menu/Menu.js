@@ -116,11 +116,11 @@ function Menu (props){
                     <div className='avatar'>{NomeEmp}
                     
                         <div className='grid'>
-                        <Avatar src='logoavatar'></Avatar>
+                        <Avatar className='icone' src='logoavatar'></Avatar>
                         </div>
                         </div>
                         <div className='uni2'>
-                        <Button  onClick={handlelogout}>Logout</Button></div>
+                        <Button size="small" fontSize="small" variant="outlined" onClick={handlelogout}>Sair</Button></div>
                         
                 </div>
 
