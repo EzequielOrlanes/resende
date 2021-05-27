@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { Form, Col, Button } from "react-bootstrap";
+import { Form, Col, Button, FormLabel } from "react-bootstrap";
 import "./Cadastro.css";
 import api from "../../services/api";
 import AddButon from "./AddButton";
 import { useHistory } from "react-router-dom";
 
 function Cadastro() {
+  
   const [NomeEmp, setNomeEmp] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const[password2, setPassword2] = useState();
   const [tipo, setTipo] = useState();
   const [aae, setAae] = useState();
   const [tel, setTel] = useState();
@@ -19,12 +21,21 @@ function Cadastro() {
   const [cnpj, setCnpj] = useState();
   const history = useHistory();
 
+function senhas(password,password2) {
+  if( password != password2){
+    alert.window()
+  }
+  
+}
   async function handlecadastro(e) {
     e.preventDefault();
     try {
+      if(password == password2){
+      
       const response = await api.post("/cadastro", {
         email,
         password,
+        
         NomeEmp,
         tipo,
         aae,
@@ -34,7 +45,13 @@ function Cadastro() {
         comp,
         desc,
         cnpj,
-      });
+      }); }
+      else{
+
+alert("Senhas não compatíveis");
+
+}
+
       history.push("/login");
     } catch (error) {
       if (error.response.status === 400) {
@@ -59,17 +76,20 @@ function Cadastro() {
 
           <Form.Group controlId="formBasicName">
             <Form.Label>Nome da Empresa</Form.Label>
+            
             <Form.Control
-              type="NomeEmp"
+              type="text"
               placeholder="Nome"
+             
               onChange={(e) => setNomeEmp(e.target.value)}
             />
             <Form.Text className="text-muted">
               Minimo 3 digitos. Máximo 30 digitos.
             </Form.Text>
           </Form.Group>
+
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email Para Login</Form.Label>
+            <Form.Label> Email Para Login </Form.Label>
             <Form.Control
               type="email"
               placeholder="Email"
@@ -85,6 +105,7 @@ function Cadastro() {
               type="password"
               placeholder="Senha"
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
             <Form.Text className="text-muted">
               Minimo 6 digitos. Máximo 20 digitos.
@@ -92,14 +113,17 @@ function Cadastro() {
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
             <Form.Label>Confirme sua Senha</Form.Label>
-            <Form.Control type="password" placeholder="Senha" />
-            <Form.Text className="text-muted">Confirme Sua Senha!</Form.Text>
+            <Form.Control type="password" placeholder="Senha"
+             onChange={(e) => setPassword2(e.target.value)}
+            required/>
           </Form.Group>
           <Form.Group id="formGridCheckbox">
             <Form.Check
+            
               type="checkbox"
               label="Empresa"
               onChange={(e) => setTipo(e.target.value)}
+              required
             />
           </Form.Group>
           <Form.Group controlId="formBasicName">
@@ -108,6 +132,7 @@ function Cadastro() {
               type="cnpj"
               placeholder="Ex: 99.999.999/9999-99"
               onChange={(e) => setCnpj(e.target.value)}
+              required
             />
             <Form.Text className="text-muted">
               Minimo 11 digitos. Máximo 14 digitos. Apenas Numeros.
@@ -120,6 +145,7 @@ function Cadastro() {
                 type="aae"
                 placeholder="Ex: artesanato, alimentos, vestuário, outros"
                 onChange={(e) => setAae(e.target.value)}
+                required = {'True'}
               />
               <Form.Text className="text-muted">
                 Minimo 3 digitos. Máximo 30 digitos.
@@ -133,6 +159,7 @@ function Cadastro() {
               type="tel"
               placeholder="Ex: (99)99999-9999"
               onChange={(e) => setTel(e.target.value)}
+              required
             />
             <Form.Text className="text-muted">
               Apenas Numeros. 11 digitos com DDD
@@ -144,6 +171,7 @@ function Cadastro() {
               type="end"
               placeholder="Av. Primeiro"
               onChange={(e) => setEnd(e.target.value)}
+              required
             />
             <Form.Text className="text-muted">
               Minimo 3 digitos. Máximo 50 digitos.
@@ -156,6 +184,7 @@ function Cadastro() {
                 type="num"
                 placeholder="Numero"
                 onChange={(e) => setNum(e.target.value)}
+                required
               />
               <Form.Text className="text-muted">
                 Numero do endereço. Entre 0 e 9999
@@ -168,6 +197,7 @@ function Cadastro() {
                 type="comp"
                 placeholder="Complemento"
                 onChange={(e) => setComp(e.target.value)}
+                required
               />
               <Form.Text className="text-muted">
                 Minimo 3 digitos. Máximo 30 digitos.
@@ -183,6 +213,7 @@ function Cadastro() {
               type="desc"
               placeholder="Complemento"
               onChange={(e) => setDesc(e.target.value)}
+              required
             />
             <Form.Text className="text-muted">
               Minimo 3 digitos. Máximo 600 digitos.
