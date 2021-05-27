@@ -31,6 +31,7 @@ function Menu(props) {
   const [currentPage, setCurrentPage] = useState("/home");
   const [open, setOpen] = useState(false);
   const [NomeEmp, setNomeEmp] = useState();
+  const [sair, setSair] = useState("login");
 
   const user_id = sessionStorage.getItem("getUser_Id");
 
@@ -38,6 +39,7 @@ function Menu(props) {
     async function getUsuario() {
       var response = await api.get("/users/" + user_id);
       setNomeEmp(response.data.NomeEmp);
+      setSair("sair");
     }
     getUsuario();
   }, []);
@@ -56,7 +58,9 @@ function Menu(props) {
     try {
       logout();
       sessionStorage.removeItem("getUser_Id");
-      alert("Logout Realizado com sucesso!");
+      if (sair === "sair") {
+        alert("Logout Realizado com sucesso!");
+      }
       history.push("/login");
     } catch (error) {
       if (error.response.status === 403) {
@@ -136,7 +140,7 @@ function Menu(props) {
                 variant="outlined"
                 onClick={handlelogout}
               >
-                Sair
+                {sair}
               </Button>
             </div>
           </div>
