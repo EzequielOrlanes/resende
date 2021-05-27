@@ -9,12 +9,14 @@
     justify-content: flex-end;
     align-items: center;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    position:static;
+    text-align: end;
 }
 
 .grid{
     display: flex;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .logoavatar{
@@ -65,6 +67,10 @@
     margin: auto;
 }
 
+.icone{
+    display: flex;
+}
+
 .uni{
     display: flex;
     flex-direction: column;
@@ -77,6 +83,14 @@
     align-items: center;
 }
 
+@media (max-width: 945px){
+
+    .e2{
+        display: none;
+    }
+
+}
+
 @media (max-width: 770px){
 
         .elemento{
@@ -86,9 +100,10 @@
         }
 
         .e1{
-            width: 75%;
+            width: 100%;
         } 
         .e2{
+            display: none;
             width: 25%;
         }
 
@@ -97,13 +112,33 @@
         }
 
         .avatar, .logoavatar{
-            width: 50%;
-            font-size: .9rem;
+            width:auto;
+            font-size: .7rem;
+            justify-content: flex-end;
+            text-align: end;
         }
 
         .grid{
-            width: 50%;
-            height: 50%;
-            margin-left: 5px;
+            display: none;
         }
+
+        .uni{
+            margin: 0px;
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+        .uni2{
+            display: flex;
+            align-content: flex-end;
+            justify-content: flex-end;
+            font-size: .8rem;
+        }
+
+
+        .icone{
+            width: auto;
+        }
+        
 }
